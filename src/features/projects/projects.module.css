@@ -1,0 +1,23 @@
+.cardBox {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-top: 20px;
+	height: 100%;
+}
+
+.card {
+	height: 50%;
+	width: 40%;
+}
+
+.cardBody {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.btnContainer {
+	display: flex;
+	justify-content: space-around;
+}
