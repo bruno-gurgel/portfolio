@@ -1,17 +1,19 @@
 import "./App.css";
-import Button from "react-bootstrap/Button";
+import { Route, Switch } from "react-router";
+import About from "./features/about/About";
+import Home from "./features/home/Home";
 
 function App() {
 	return (
-		<div className="App ">
-			<h1 className="display-4">Hi! My name is Bruno, nice to see you here.</h1>
-			<br />
-			<Button variant="outline-warning" size="lg" className=" btn mb-4 w-25">
-				Projects
-			</Button>
-			<Button variant="outline-warning" size="lg" className="btn w-25">
-				About
-			</Button>
+		<div className="App">
+			<Switch>
+				<Route path="/about">
+					<About />
+				</Route>
+				<Route path="/">
+					<Home />
+				</Route>
+			</Switch>
 		</div>
 	);
 }
