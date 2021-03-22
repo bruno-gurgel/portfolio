@@ -3,7 +3,7 @@ import styles from "./projects.module.css";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import MyReadsBanner from "../../assets/myreads-banner.png";
+
 import WouldYouRatherBanner from "../../assets/would-you-rather-banner-1.png";
 import { Link } from "react-router-dom";
 
@@ -24,8 +24,11 @@ export default function Projects() {
 							books you have read, are currently reading, or want to read.
 						</Card.Title>
 						<div className={styles.btnContainer}>
-							<Button variant="dark">Details</Button>
-							<Button variant="dark">Repository</Button>
+							<Link to="/projects/MyReads">
+								<Button variant="dark" size="lg">
+									Details
+								</Button>
+							</Link>
 						</div>
 					</Card.Body>
 				</Card>
@@ -37,8 +40,11 @@ export default function Projects() {
 							Redux.
 						</Card.Title>
 						<div className={styles.btnContainer}>
-							<Button variant="dark">Details</Button>
-							<Button variant="dark">Repository</Button>
+							<Link to="/projects/WouldYouRather">
+								<Button variant="dark" size="lg">
+									Details
+								</Button>
+							</Link>
 						</div>
 					</Card.Body>
 				</Card>
