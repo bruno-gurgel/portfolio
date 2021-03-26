@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;700&display=swap");
 
+* {
+	letter-spacing: 1px;
+}
+
 html,
 body,
 #root {
@@ -19,4 +23,8 @@ p {
 
 .App {
 	height: 100%;
+}
+
+button {
+	font-weight: bold;
 }
