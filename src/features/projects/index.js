@@ -3,7 +3,6 @@ import styles from "./projects.module.css";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-
 import WouldYouRatherBanner from "../../assets/would-you-rather-banner-1.png";
 import { Link } from "react-router-dom";
 
@@ -12,7 +11,7 @@ export default function Projects() {
 		<Container className="h-100">
 			<Link to="/">
 				<Button variant="outline-warning" size="lg" className="mt-1">
-					Go home
+					<strong>Go home</strong>
 				</Button>
 			</Link>
 			<div className={styles.cardBox}>
@@ -26,7 +25,7 @@ export default function Projects() {
 						<div className={styles.btnContainer}>
 							<Link to="/projects/MyReads">
 								<Button variant="dark" size="lg">
-									Details
+									<strong>Details</strong>
 								</Button>
 							</Link>
 						</div>
@@ -42,7 +41,7 @@ export default function Projects() {
 						<div className={styles.btnContainer}>
 							<Link to="/projects/WouldYouRather">
 								<Button variant="dark" size="lg">
-									Details
+									<strong>Details</strong>
 								</Button>
 							</Link>
 						</div>

@@ -11,16 +11,16 @@ export default function Home() {
 			<div className={styles.btnContainer}>
 				<Link to="/about">
 					<Button variant="outline-warning" size="lg" className={styles.btn}>
-						About
+						<strong>About</strong>
 					</Button>
 				</Link>
 				<Link to="/projects">
 					<Button variant="outline-warning" size="lg" className={styles.btn}>
-						Projects
+						<strong>Projects</strong>
 					</Button>
 				</Link>
 				<Button variant="outline-warning" size="lg" className={styles.btn}>
-					Contact
+					<strong>Contact</strong>
 				</Button>
 			</div>
 		</div>

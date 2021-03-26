@@ -9,7 +9,7 @@ export default function About() {
 		<Container>
 			<Link to="/">
 				<Button variant="outline-warning" size="lg" className="mt-1">
-					Go home
+					<strong>Go home</strong>
 				</Button>
 			</Link>
 			<h1 className="display-2 text-center">About me</h1>

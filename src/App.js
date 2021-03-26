@@ -1,10 +1,10 @@
 import "./App.css";
 import { Route, Switch } from "react-router";
-import About from "./features/about/About";
-import Home from "./features/home/Home";
-import Projects from "./features/projects/Projects";
-import MyReads from "./features/projects/MyReads/MyReads.js";
-import WouldYouRather from "./features/projects/WouldYouRather/WouldYouRather";
+import About from "./features/about";
+import Home from "./features/home";
+import Projects from "./features/projects";
+import MyReads from "./features/projects/MyReads";
+import WouldYouRather from "./features/projects/WouldYouRather";
 
 function App() {
 	return (
