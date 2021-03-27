@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import "./App.css";
 import { Route, Switch } from "react-router";
 import About from "./features/about";
@@ -7,23 +8,24 @@ import MyReads from "./features/projects/MyReads";
 import WouldYouRather from "./features/projects/WouldYouRather";
 
 function App() {
+	const [language, updateLanguage] = useState("english");
 	return (
 		<div className="App">
 			<Switch>
 				<Route path="/about">
-					<About />
+					<About language={language} onUpdateLanguage={updateLanguage} />
 				</Route>
 				<Route path="/projects/MyReads">
-					<MyReads />
+					<MyReads language={language} onUpdateLanguage={updateLanguage} />
 				</Route>
 				<Route path="/projects/WouldYouRather">
-					<WouldYouRather />
+					<WouldYouRather language={language} onUpdateLanguage={updateLanguage} />
 				</Route>
 				<Route path="/projects">
-					<Projects />
+					<Projects language={language} onUpdateLanguage={updateLanguage} />
 				</Route>
 				<Route path="/">
-					<Home />
+					<Home language={language} onUpdateLanguage={updateLanguage} />
 				</Route>
 			</Switch>
 		</div>

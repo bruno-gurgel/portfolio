@@ -8,16 +8,14 @@ import { Link } from "react-router-dom";
 import ProjectsPortuguese from "./ProjectsPortuguese";
 import Navigation from "../navigation";
 
-export default function Projects() {
-	const [language, updateLanguage] = useState("english");
-
+export default function Projects({ language, onUpdateLanguage }) {
 	if (language === "portuguese") {
-		return <ProjectsPortuguese onUpdateLanguage={updateLanguage} />;
+		return <ProjectsPortuguese onUpdateLanguage={onUpdateLanguage} />;
 	}
 
 	return (
 		<Container className={styles.projectsContainer}>
-			<Navigation onUpdateLanguage={updateLanguage} language={language} backLocation="/" />
+			<Navigation onUpdateLanguage={onUpdateLanguage} language={language} backLocation="/" />
 			<div className={styles.cardBox}>
 				<Card className={styles.card}>
 					<Card.Header className="display-4">MyReads</Card.Header>

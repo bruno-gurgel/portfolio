@@ -1,21 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import Container from "react-bootstrap/Container";
 import styles from "./about.module.css";
 import Navigation from "../navigation";
-import { Link } from "react-router-dom";
-import Button from "react-bootstrap/Button";
 import AboutPortuguese from "./AboutPortuguese";
 
-export default function About() {
-	const [language, updateLanguage] = useState("english");
-
+export default function About({ language, onUpdateLanguage }) {
 	if (language === "portuguese") {
-		return <AboutPortuguese onUpdateLanguage={updateLanguage} />;
+		return <AboutPortuguese onUpdateLanguage={onUpdateLanguage} />;
 	}
 
 	return (
 		<Container className={styles.AboutContainer}>
-			<Navigation onUpdateLanguage={updateLanguage} language={language} backLocation="/" />
+			<Navigation onUpdateLanguage={onUpdateLanguage} language={language} backLocation="/" />
 			<h1 className="display-2 text-center">About me</h1>
 
 			<p className={styles.text}>

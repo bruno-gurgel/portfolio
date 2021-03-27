@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./home.module.css";
 import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
@@ -18,7 +18,7 @@ export default function HomePortuguese({ onUpdateLanguage }) {
 				</Button>
 			</Container>
 			<div className={styles.homeMain}>
-				<h1 className="display-3">Olá! Meu nome é Bruno, bom te ver aqui.</h1>
+				<h1 className="display-3">Olá! Eu sou Bruno, bom te ver aqui.</h1>
 				<br />
 				<div className={styles.btnContainer}>
 					<Link to="/about">
