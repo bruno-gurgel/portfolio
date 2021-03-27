@@ -1,3 +1,34 @@
+.wouldYouRatherContainer {
+	padding: 15px;
+}
+
 .subHeading {
 	color: #e6e6e6;
+}
+
+.introText {
+	font-size: 1.7rem;
+}
+
+.pageLink {
+	color: #99e6ff;
+}
+
+.pageLink:hover {
+	color: #99e6ff;
+}
+
+.buttonBox {
+	width: 100%;
+	text-align: center;
+}
+
+.buttonLink {
+	color: #212529;
+}
+
+.buttonLink:hover {
+	color: #212529;
+	background-color: #e0a800;
+	border-color: #d39e00;
 }

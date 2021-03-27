@@ -4,24 +4,19 @@ import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import Navigation from "../../navigation";
-import MyReadsPortuguese from "../MyReads/MyReadsPortuguese";
-import WouldYouRatherPortuguese from "./PortugueseWouldYouRather";
 
-export default function WouldYouRather({ language, onUpdateLanguage }) {
-	if (language === "portuguese") {
-		return <WouldYouRatherPortuguese onUpdateLanguage={onUpdateLanguage} />;
-	}
+export default function WouldYouRatherPortuguese({ onUpdateLanguage }) {
 	return (
 		<Container className={styles.wouldYouRatherContainer}>
 			<Navigation
 				onUpdateLanguage={onUpdateLanguage}
-				language={language}
+				language="portuguese"
 				backLocation="/projects"
 			/>
 			<Container>
 				<h1 className="display-3 text-white mt-4">Would You Rather...</h1>
 				<h2 className={styles.subHeading}>
-					Variation of the{" "}
+					Variação do jogo{" "}
 					<Link
 						to={{
 							pathname: "https://en.wikipedia.org/wiki/Would_you_rather",
@@ -29,7 +24,7 @@ export default function WouldYouRather({ language, onUpdateLanguage }) {
 						target="_blank"
 						className={styles.pageLink}
 					>
-						Would You Rather game.
+						Would You Rather.
 					</Link>
 				</h2>
 				<Link
@@ -39,35 +34,35 @@ export default function WouldYouRather({ language, onUpdateLanguage }) {
 					target="_blank"
 				>
 					<Button variant="warning" size="lg">
-						<strong>Repository</strong>
+						<strong>Repositório</strong>
 					</Button>
 				</Link>
 			</Container>
 			<Container className="mt-5 text-justify">
 				<p className={styles.introText}>
-					In this project, I had to make a web app that lets a user play the “Would You
-					Rather?” game. The game goes like this: A user is asked a question in the form:
-					“Would you rather <span className="text-warning">[option A]</span> or{" "}
-					<span className="text-warning">[option B]</span> ?”. Answering "neither" or
-					"both" is against the rules.
+					Neste projeto, eu tive que fazer um aplicativo da web que permite ao usuário
+					jogar o “Você prefere?” jogos. O jogo é assim: Um usuário é feito uma pergunta
+					na forma: “Você prefere <span className="text-warning">[Opção A]</span> or{" "}
+					<span className="text-warning">[Opção B]</span> ?”. Responder "nenhum" ou
+					"ambos" é contra as regras.
 				</p>
 				<p className={styles.introText}>
-					I used a fake database that was given by Udacity to contain the initial data so
-					that I could focus on React & Redux. In this project I felt much more confident
-					in React, so I struggled more in the state control with Redux, but I loved it
-					and its simplicity. Also, their
+					Usei um banco de dados falso fornecido pela Udacity para conter os dados
+					iniciais para que eu pudesse me concentrar no React & Redux. Nesse projeto me
+					senti muito mais confiante no React, então me esforcei mais no controle de
+					estado com o Redux, mas o adorei e sua simplicidade. Além disso, sua
 					<Link
 						to={{ pathname: "https://redux.js.org/introduction/getting-started" }}
 						target="_blank"
 						className={styles.pageLink}
 					>
 						{" "}
-						great documentation{" "}
+						excelente documentação{" "}
 					</Link>{" "}
-					made my learning a lot easier.
+					tornou meu aprendizado muito mais fácil.
 				</p>
 				<p className={styles.introText}>
-					I used React with Redux in this application. On the Redux part, I used their{" "}
+					Usei React com Redux neste aplicativo. Na parte do Redux, usei o{" "}
 					<Link
 						to={{ pathname: "https://redux-toolkit.js.org/" }}
 						target="_blank"
@@ -76,13 +71,13 @@ export default function WouldYouRather({ language, onUpdateLanguage }) {
 						{" "}
 						Toolkit{" "}
 					</Link>{" "}
-					that abstracts a lot of the complicated parts like reducers and state updates,
-					it is really worth a try!
+					que abstrai muitas das partes complicadas, como reducers e atualizações de
+					estado, vale realmente a pena tentar!
 				</p>
 				<div className={styles.buttonBox}>
 					<Button variant="warning" size="lg" className={styles.button}>
 						<Link to="/" className={styles.buttonLink}>
-							<strong>Here is the project so you can check it.</strong>
+							<strong>Aqui está o link para o projeto.</strong>
 						</Link>
 					</Button>
 				</div>
