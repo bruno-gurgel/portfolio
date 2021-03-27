@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "../MyReads.module.css";
+import styles from "./MyReads.module.css";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import Navigation from "../../../navigation";
+import Navigation from "../../navigation";
 
 export default function MyReadsPortuguese({ onUpdateLanguage }) {
 	return (

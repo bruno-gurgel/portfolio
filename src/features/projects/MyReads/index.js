@@ -4,7 +4,7 @@ import myReadsBanner from "./assets/myreads-banner.png";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import MyReadsPortuguese from "./portuguese/MyReadsPortuguese";
+import MyReadsPortuguese from "./MyReadsPortuguese";
 import Navigation from "../../navigation";
 
 export default function MyReads({ language, onUpdateLanguage }) {
@@ -33,7 +33,7 @@ export default function MyReads({ language, onUpdateLanguage }) {
 					</Link>
 				</Button>
 			</Container>
-			<Container className="mt-5">
+			<Container className="mt-5  text-justify">
 				<p className={styles.introText}>
 					In this project, I had to make a Single Page Application (SPA) that was a
 					bookshelf so that the users could organize what they were reading or wanting to
