@@ -6,6 +6,7 @@ import Button from "react-bootstrap/Button";
 import WouldYouRatherBanner from "../../assets/would-you-rather-banner-1.png";
 import { Link } from "react-router-dom";
 import ProjectsPortuguese from "./ProjectsPortuguese";
+import Navigation from "../navigation";
 
 export default function Projects() {
 	const [language, updateLanguage] = useState("english");
@@ -16,21 +17,7 @@ export default function Projects() {
 
 	return (
 		<Container className={styles.projectsContainer}>
-			<div className={styles.navBtnsBox}>
-				<Link to="/">
-					<Button variant="outline-warning" size="lg" className="mt-1">
-						<strong>Go home</strong>
-					</Button>
-				</Link>
-				<Button
-					variant="outline-warning"
-					size="lg"
-					className="mt-1"
-					onClick={() => updateLanguage("portuguese")}
-				>
-					<strong>Mudar para Português</strong>
-				</Button>
-			</div>
+			<Navigation onUpdateLanguage={updateLanguage} language={language} backLocation="/" />
 			<div className={styles.cardBox}>
 				<Card className={styles.card}>
 					<Card.Header className="display-4">MyReads</Card.Header>

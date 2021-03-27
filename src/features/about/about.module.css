@@ -2,11 +2,6 @@
 	padding: 15px;
 }
 
-.navBtnsBox {
-	display: flex;
-	justify-content: space-between;
-}
-
 .text {
 	text-align: justify;
 	font-size: 1.5rem;

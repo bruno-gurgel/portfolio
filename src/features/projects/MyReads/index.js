@@ -4,7 +4,8 @@ import myReadsBanner from "./assets/myreads-banner.png";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import MyReadsPortuguese from "./portuguese/MyReads_portuguese";
+import MyReadsPortuguese from "./portuguese/MyReadsPortuguese";
+import Navigation from "../../navigation";
 
 export default function MyReads() {
 	const [language, updateLanguage] = useState("english");
@@ -12,21 +13,11 @@ export default function MyReads() {
 	if (language === "english") {
 		return (
 			<Container className={styles.myReadsContainer}>
-				<div className={styles.navBtnsBox}>
-					<Link to="/projects">
-						<Button variant="outline-warning" size="lg" className="mt-1">
-							<strong>Go back</strong>
-						</Button>
-					</Link>
-					<Button
-						variant="outline-warning"
-						size="lg"
-						className="mt-1"
-						onClick={() => updateLanguage("portuguese")}
-					>
-						<strong>Mudar para Português</strong>
-					</Button>
-				</div>
+				<Navigation
+					onUpdateLanguage={updateLanguage}
+					language={language}
+					backLocation="/projects"
+				/>
 				<Container>
 					<h1 className="display-3 text-white mt-4">MyReads</h1>
 					<h2 className={styles.subHeading}>

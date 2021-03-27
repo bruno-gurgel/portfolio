@@ -3,25 +3,16 @@ import styles from "../MyReads.module.css";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
+import Navigation from "../../../navigation";
 
 export default function MyReadsPortuguese({ onUpdateLanguage }) {
 	return (
 		<Container className={styles.myReadsContainer}>
-			<div className={styles.navBtnsBox}>
-				<Link to="/projects">
-					<Button variant="outline-warning" size="lg" className="mt-1">
-						<strong>Voltar</strong>
-					</Button>
-				</Link>
-				<Button
-					variant="outline-warning"
-					size="lg"
-					className="mt-1"
-					onClick={() => onUpdateLanguage("english")}
-				>
-					<strong>Change to English</strong>
-				</Button>
-			</div>
+			<Navigation
+				onUpdateLanguage={onUpdateLanguage}
+				language={"portuguese"}
+				backLocation="/projects"
+			/>
 			<Container>
 				<h1 className="display-3 text-white mt-4">MyReads</h1>
 				<h2 className={styles.subHeading}>

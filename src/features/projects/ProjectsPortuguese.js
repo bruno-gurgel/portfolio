@@ -5,25 +5,16 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import WouldYouRatherBanner from "../../assets/would-you-rather-banner-1.png";
 import { Link } from "react-router-dom";
+import Navigation from "../navigation";
 
 export default function ProjectsPortuguese({ onUpdateLanguage }) {
 	return (
 		<Container className={styles.projectsContainer}>
-			<div className={styles.navBtnsBox}>
-				<Link to="/">
-					<Button variant="outline-warning" size="lg" className="mt-1">
-						<strong>Voltar</strong>
-					</Button>
-				</Link>
-				<Button
-					variant="outline-warning"
-					size="lg"
-					className="mt-1"
-					onClick={() => onUpdateLanguage("english")}
-				>
-					<strong>Change to English</strong>
-				</Button>
-			</div>
+			<Navigation
+				onUpdateLanguage={onUpdateLanguage}
+				language={"portuguese"}
+				backLocation="/"
+			/>
 			<div className={styles.cardBox}>
 				<Card className={styles.card}>
 					<Card.Header className="display-4">MyReads</Card.Header>

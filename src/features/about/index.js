@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import styles from "./about.module.css";
+import Navigation from "../navigation";
 import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import AboutPortuguese from "./AboutPortuguese";
@@ -14,21 +15,7 @@ export default function About() {
 
 	return (
 		<Container className={styles.AboutContainer}>
-			<div className={styles.navBtnsBox}>
-				<Link to="/">
-					<Button variant="outline-warning" size="lg" className="mt-1">
-						<strong>Go home</strong>
-					</Button>
-				</Link>
-				<Button
-					variant="outline-warning"
-					size="lg"
-					className="mt-1"
-					onClick={() => updateLanguage("portuguese")}
-				>
-					<strong>Mudar para Português</strong>
-				</Button>
-			</div>
+			<Navigation onUpdateLanguage={updateLanguage} language={language} backLocation="/" />
 			<h1 className="display-2 text-center">About me</h1>
 
 			<p className={styles.text}>

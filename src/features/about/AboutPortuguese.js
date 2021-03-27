@@ -1,27 +1,18 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import styles from "./about.module.css";
+import Navigation from "../navigation";
 import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 
 export default function AboutPortuguese({ onUpdateLanguage }) {
 	return (
 		<Container className={styles.AboutContainer}>
-			<div className={styles.navBtnsBox}>
-				<Link to="/">
-					<Button variant="outline-warning" size="lg" className="mt-1">
-						<strong>Voltar</strong>
-					</Button>
-				</Link>
-				<Button
-					variant="outline-warning"
-					size="lg"
-					className="mt-1"
-					onClick={() => onUpdateLanguage("english")}
-				>
-					<strong>Change to English</strong>
-				</Button>
-			</div>
+			<Navigation
+				onUpdateLanguage={onUpdateLanguage}
+				language={"portuguese"}
+				backLocation="/"
+			/>
 			<h1 className="display-2 text-center">Sobre mim</h1>
 
 			<p className={styles.text}>

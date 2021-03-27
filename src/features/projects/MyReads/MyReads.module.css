@@ -3,11 +3,6 @@
 	padding: 15px;
 }
 
-.navBtnsBox {
-	display: flex;
-	justify-content: space-between;
-}
-
 .subHeading {
 	color: #e6e6e6;
 }
