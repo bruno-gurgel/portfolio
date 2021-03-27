@@ -1,34 +1,27 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./projects.module.css";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import WouldYouRatherBanner from "../../assets/would-you-rather-banner-1.png";
 import { Link } from "react-router-dom";
-import ProjectsPortuguese from "./ProjectsPortuguese";
 
-export default function Projects() {
-	const [language, updateLanguage] = useState("english");
-
-	if (language === "portuguese") {
-		return <ProjectsPortuguese onUpdateLanguage={updateLanguage} />;
-	}
-
+export default function ProjectsPortuguese({ onUpdateLanguage }) {
 	return (
 		<Container className={styles.projectsContainer}>
 			<div className={styles.navBtnsBox}>
 				<Link to="/">
 					<Button variant="outline-warning" size="lg" className="mt-1">
-						<strong>Go home</strong>
+						<strong>Voltar</strong>
 					</Button>
 				</Link>
 				<Button
 					variant="outline-warning"
 					size="lg"
 					className="mt-1"
-					onClick={() => updateLanguage("portuguese")}
+					onClick={() => onUpdateLanguage("english")}
 				>
-					<strong>Mudar para Português</strong>
+					<strong>Change to English</strong>
 				</Button>
 			</div>
 			<div className={styles.cardBox}>
@@ -36,13 +29,13 @@ export default function Projects() {
 					<Card.Header className="display-4">MyReads</Card.Header>
 					<Card.Body className={styles.cardBody}>
 						<Card.Title>
-							Bookshelf app made with React that allows you to select and categorize
-							books you have read, are currently reading, or want to read.
+							Aplicativo de estante virtual que permite selecionar e categorizar os
+							livros que você leu, está lendo ou quer ler.
 						</Card.Title>
 						<div className={styles.btnContainer}>
 							<Link to="/projects/MyReads">
 								<Button variant="dark" size="lg">
-									<strong>Details</strong>
+									<strong>Detalhes</strong>
 								</Button>
 							</Link>
 						</div>
@@ -52,13 +45,12 @@ export default function Projects() {
 					<Card.Header className="display-4">Would you Rather...</Card.Header>
 					<Card.Body className={styles.cardBody}>
 						<Card.Title>
-							Variation of the Would You Rather game. made with Bootstrap, React &
-							Redux.
+							Variação do jogo Would You Rather. Feito com Bootstrap, React & Redux.
 						</Card.Title>
 						<div className={styles.btnContainer}>
 							<Link to="/projects/WouldYouRather">
 								<Button variant="dark" size="lg">
-									<strong>Details</strong>
+									<strong>Detalhes</strong>
 								</Button>
 							</Link>
 						</div>

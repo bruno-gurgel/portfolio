@@ -1,3 +1,13 @@
+.projectsContainer {
+	height: 100%;
+	padding: 15px;
+}
+
+.navBtnsBox {
+	display: flex;
+	justify-content: space-between;
+}
+
 .cardBox {
 	display: flex;
 	justify-content: space-around;
