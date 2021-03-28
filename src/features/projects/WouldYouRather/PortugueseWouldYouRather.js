@@ -74,10 +74,13 @@ export default function WouldYouRatherPortuguese({ onUpdateLanguage }) {
 					que abstrai muitas das partes complicadas, como reducers e atualizações de
 					estado, vale realmente a pena tentar!
 				</p>
+				<p className={styles.introText}>
+					<span className="text-warning text-center">Obs: o projeto é em inglês!</span>
+				</p>
 				<div className={styles.buttonBox}>
 					<Button variant="warning" size="lg" className={styles.button}>
 						<Link to="/" className={styles.buttonLink}>
-							<strong>Aqui está o link para o projeto.</strong>
+							<strong>Clique aqui para ver o projeto.</strong>
 						</Link>
 					</Button>
 				</div>
