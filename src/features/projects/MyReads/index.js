@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./MyReads.module.css";
 import myReadsBanner from "./assets/myreads-banner.png";
 import Container from "react-bootstrap/Container";

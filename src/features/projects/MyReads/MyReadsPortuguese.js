@@ -55,10 +55,13 @@ export default function MyReadsPortuguese({ onUpdateLanguage }) {
 					como evitar componentes de classe. Desde que aprendi React sem os hooks,
 					enfrentei alguns desafios, mas realmente aprendi muito.
 				</p>
+				<p className={styles.introText}>
+					<span className="text-warning text-center">Obs: o projeto é em inglês!</span>
+				</p>
 				<div className={styles.buttonBox}>
 					<Button variant="warning" size="lg" className={styles.button}>
 						<Link to="/" className={styles.buttonLink}>
-							<strong>Aqui está o link para o projeto.</strong>
+							<strong>Clique aqui para ver o projeto.</strong>
 						</Link>
 					</Button>
 				</div>
