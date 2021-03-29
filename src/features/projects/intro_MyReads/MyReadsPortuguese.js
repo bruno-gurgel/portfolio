@@ -5,7 +5,7 @@ import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import Navigation from "../../navigation";
 
-export default function MyReadsPortuguese({ onUpdateLanguage }) {
+export default function introMyReadsPortuguese({ onUpdateLanguage }) {
 	return (
 		<Container className={styles.myReadsContainer}>
 			<Navigation

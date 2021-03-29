@@ -4,19 +4,23 @@ import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import Navigation from "../../navigation";
+import WouldYouRatherPortuguese from "./PortugueseWouldYouRather";
 
-export default function WouldYouRatherPortuguese({ onUpdateLanguage }) {
+export default function introWouldYouRather({ language, onUpdateLanguage }) {
+	if (language === "portuguese") {
+		return <WouldYouRatherPortuguese onUpdateLanguage={onUpdateLanguage} />;
+	}
 	return (
 		<Container className={styles.wouldYouRatherContainer}>
 			<Navigation
 				onUpdateLanguage={onUpdateLanguage}
-				language="portuguese"
+				language={language}
 				backLocation="/projects"
 			/>
 			<Container>
 				<h1 className="display-3 text-white mt-4">Would You Rather...</h1>
 				<h2 className={styles.subHeading}>
-					Variação do jogo{" "}
+					Variation of the{" "}
 					<Link
 						to={{
 							pathname: "https://en.wikipedia.org/wiki/Would_you_rather",
@@ -24,7 +28,7 @@ export default function WouldYouRatherPortuguese({ onUpdateLanguage }) {
 						target="_blank"
 						className={styles.pageLink}
 					>
-						Would You Rather.
+						Would You Rather game.
 					</Link>
 				</h2>
 				<Link
@@ -34,35 +38,35 @@ export default function WouldYouRatherPortuguese({ onUpdateLanguage }) {
 					target="_blank"
 				>
 					<Button variant="warning" size="lg">
-						<strong>Repositório</strong>
+						<strong>Repository</strong>
 					</Button>
 				</Link>
 			</Container>
 			<Container className="mt-5 text-justify">
 				<p className={styles.introText}>
-					Neste projeto, eu tive que fazer um aplicativo da web que permite ao usuário
-					jogar o “Você prefere?” jogos. O jogo é assim: Um usuário é feito uma pergunta
-					na forma: “Você prefere <span className="text-warning">[Opção A]</span> or{" "}
-					<span className="text-warning">[Opção B]</span> ?”. Responder "nenhum" ou
-					"ambos" é contra as regras.
+					In this project, I had to make a web app that lets a user play the “Would You
+					Rather?” game. The game goes like this: A user is asked a question in the form:
+					“Would you rather <span className="text-warning">[option A]</span> or{" "}
+					<span className="text-warning">[option B]</span> ?”. Answering "neither" or
+					"both" is against the rules.
 				</p>
 				<p className={styles.introText}>
-					Usei um banco de dados falso fornecido pela Udacity para conter os dados
-					iniciais para que eu pudesse me concentrar no React & Redux. Nesse projeto me
-					senti muito mais confiante no React, então me esforcei mais no controle de
-					estado com o Redux, mas o adorei e sua simplicidade. Além disso, sua
+					I used a fake database that was given by Udacity to contain the initial data so
+					that I could focus on React & Redux. In this project I felt much more confident
+					in React, so I struggled more in the state control with Redux, but I loved it
+					and its simplicity. Also, their
 					<Link
 						to={{ pathname: "https://redux.js.org/introduction/getting-started" }}
 						target="_blank"
 						className={styles.pageLink}
 					>
 						{" "}
-						excelente documentação{" "}
+						great documentation{" "}
 					</Link>{" "}
-					tornou meu aprendizado muito mais fácil.
+					made my learning a lot easier.
 				</p>
 				<p className={styles.introText}>
-					Usei React com Redux neste aplicativo. Na parte do Redux, usei o{" "}
+					I used React with Redux in this application. On the Redux part, I used their{" "}
 					<Link
 						to={{ pathname: "https://redux-toolkit.js.org/" }}
 						target="_blank"
@@ -71,16 +75,13 @@ export default function WouldYouRatherPortuguese({ onUpdateLanguage }) {
 						{" "}
 						Toolkit{" "}
 					</Link>{" "}
-					que abstrai muitas das partes complicadas, como reducers e atualizações de
-					estado, vale realmente a pena tentar!
-				</p>
-				<p className={styles.introText}>
-					<span className="text-warning text-center">Obs: o projeto é em inglês!</span>
+					that abstracts a lot of the complicated parts like reducers and state updates,
+					it is really worth a try!
 				</p>
 				<div className={styles.buttonBox}>
 					<Button variant="warning" size="lg" className={styles.button}>
 						<Link to="/" className={styles.buttonLink}>
-							<strong>Clique aqui para ver o projeto.</strong>
+							<strong>Here is the project so you can check it.</strong>
 						</Link>
 					</Button>
 				</div>

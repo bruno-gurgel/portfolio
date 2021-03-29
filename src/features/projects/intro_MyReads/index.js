@@ -1,13 +1,12 @@
 import React from "react";
 import styles from "./MyReads.module.css";
-import myReadsBanner from "./assets/myreads-banner.png";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import MyReadsPortuguese from "./MyReadsPortuguese";
 import Navigation from "../../navigation";
 
-export default function MyReads({ language, onUpdateLanguage }) {
+export default function introMyReads({ language, onUpdateLanguage }) {
 	if (language === "portuguese") {
 		return <MyReadsPortuguese onUpdateLanguage={onUpdateLanguage} />;
 	}

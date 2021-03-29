@@ -4,8 +4,8 @@ import { Route, Switch } from "react-router";
 import About from "./features/about";
 import Home from "./features/home";
 import Projects from "./features/projects";
-import MyReads from "./features/projects/MyReads";
-import WouldYouRather from "./features/projects/WouldYouRather";
+import MyReads from "./features/projects/intro_MyReads";
+import WouldYouRather from "./features/projects/intro_WouldYouRather";
 
 function App() {
 	const [language, updateLanguage] = useState("english");
