@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./MyReads.module.css";
+import styles from "./introMyReads.module.css";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
@@ -60,7 +60,7 @@ export default function introMyReads({ language, onUpdateLanguage }) {
 				</p>
 				<div className={styles.buttonBox}>
 					<Button variant="warning" size="lg" className={styles.button}>
-						<Link to="/" className={styles.buttonLink}>
+						<Link to="/MyReads" className={styles.buttonLink}>
 							<strong>Here is the project so you can check it.</strong>
 						</Link>
 					</Button>
