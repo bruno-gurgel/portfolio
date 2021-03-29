@@ -30,7 +30,7 @@ export default function MyReads() {
 	return (
 		<div className="app">
 			<Route
-				path="MyReads/search"
+				path="/MyReads/search"
 				render={() => <Search booksArray={booksArray} updateShelf={updateBookShelf} />}
 			/>
 			<Route

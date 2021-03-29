@@ -37,7 +37,7 @@ export default function Search(props) {
 	return (
 		<div className={styles.searchBooks}>
 			<div className={styles.searchBooksBar}>
-				<Link to="/" className={styles.closeSearch}>
+				<Link to="/MyReads" className={styles.closeSearch}>
 					Close
 				</Link>
 				<div className={styles.searchBooksInputWrapper}>
