@@ -4,8 +4,9 @@ import { Route, Switch } from "react-router";
 import About from "./features/about";
 import Home from "./features/home";
 import Projects from "./features/projects";
-import MyReads from "./features/projects/intro_MyReads";
+import IntroMyReads from "./features/projects/intro_MyReads";
 import WouldYouRather from "./features/projects/intro_WouldYouRather";
+import MyReads from "./features/MyReads";
 
 function App() {
 	const [language, updateLanguage] = useState("english");
@@ -16,13 +17,16 @@ function App() {
 					<About language={language} onUpdateLanguage={updateLanguage} />
 				</Route>
 				<Route path="/projects/MyReads">
-					<MyReads language={language} onUpdateLanguage={updateLanguage} />
+					<IntroMyReads language={language} onUpdateLanguage={updateLanguage} />
 				</Route>
 				<Route path="/projects/WouldYouRather">
 					<WouldYouRather language={language} onUpdateLanguage={updateLanguage} />
 				</Route>
 				<Route path="/projects">
 					<Projects language={language} onUpdateLanguage={updateLanguage} />
+				</Route>
+				<Route path="/MyReads">
+					<MyReads />
 				</Route>
 				<Route path="/">
 					<Home language={language} onUpdateLanguage={updateLanguage} />
