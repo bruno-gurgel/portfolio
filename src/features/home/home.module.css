@@ -4,12 +4,17 @@
 	flex-direction: column;
 	justify-content: center;
 	gap: 50px;
+
+	backface-visibility: hidden;
+	overflow-x: hidden;
 }
 
 .navBtnBox {
 	width: 100%;
 	text-align: right;
 	padding-top: 15px;
+
+	animation: moveInRight 1s ease-out;
 }
 
 .homeMain {
@@ -18,13 +23,79 @@
 	justify-content: center;
 	align-items: center;
 }
+
+.heading {
+	font-size: 4.5rem;
+	font-weight: 300;
+	line-height: 1.2;
+
+	animation: moveInLeft 1s ease-out;
+}
+
 .btnContainer {
 	display: flex;
 	width: 100%;
 	justify-content: center;
 	gap: 30px;
+
+	animation: moveInBottom 0.5 ease-out 0.75s;
 }
 
 .btn {
 	font-size: 2rem;
+	transition: all 0.2s;
+}
+
+.btn:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+	transform: translateY(-1px);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes moveInRight {
+	0% {
+		opacity: 0;
+		transform: translateX(100px);
+	}
+
+	80% {
+		transform: translate(-10px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@keyframes moveInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+
+	80% {
+		transform: translate(10px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@keyframes moveInBottom {
+	0% {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
 }

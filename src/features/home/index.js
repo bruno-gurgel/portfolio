@@ -15,14 +15,14 @@ export default function Home({ language, onUpdateLanguage }) {
 				<Button
 					variant="outline-warning"
 					size="lg"
-					className="mt-1"
+					className={styles.btn}
 					onClick={() => onUpdateLanguage("portuguese")}
 				>
 					<strong>Mudar para Português</strong>
 				</Button>
 			</Container>
 			<div className={styles.homeMain}>
-				<h1 className="display-3">Hi! My name is Bruno, nice to see you here.</h1>
+				<h1 className={styles.heading}>Hi! My name is Bruno, nice to see you here.</h1>
 				<br />
 				<div className={styles.btnContainer}>
 					<Link to="/about">

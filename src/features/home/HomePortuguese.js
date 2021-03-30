@@ -11,7 +11,7 @@ export default function HomePortuguese({ onUpdateLanguage }) {
 				<Button
 					variant="outline-warning"
 					size="lg"
-					className="mt-1"
+					className={styles.btn}
 					onClick={() => onUpdateLanguage("english")}
 				>
 					<strong>Change to English</strong>
