@@ -13,14 +13,14 @@ export default function Navigation({ onUpdateLanguage, language, backLocation })
 	return (
 		<div className={styles.navigation}>
 			<Link to={backLocation}>
-				<Button variant="outline-warning" size="lg" className="mt-1">
+				<Button variant="outline-warning" size="lg" className={styles.btn}>
 					<strong>Go back</strong>
 				</Button>
 			</Link>
 			<Button
 				variant="outline-warning"
 				size="lg"
-				className="mt-1"
+				className={styles.btn}
 				onClick={() =>
 					onUpdateLanguage(language === "portuguese" ? "english" : "portuguese")
 				}

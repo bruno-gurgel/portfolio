@@ -26,7 +26,7 @@ export default function Projects({ language, onUpdateLanguage }) {
 						</Card.Title>
 						<div className={styles.btnContainer}>
 							<Link to="/projects/MyReads">
-								<Button variant="dark" size="lg">
+								<Button variant="dark" size="lg" className={styles.btn}>
 									<strong>Details</strong>
 								</Button>
 							</Link>
@@ -42,7 +42,7 @@ export default function Projects({ language, onUpdateLanguage }) {
 						</Card.Title>
 						<div className={styles.btnContainer}>
 							<Link to="/projects/WouldYouRather">
-								<Button variant="dark" size="lg">
+								<Button variant="dark" size="lg" className={styles.btn}>
 									<strong>Details</strong>
 								</Button>
 							</Link>

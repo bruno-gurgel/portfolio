@@ -31,16 +31,18 @@ export default function introWouldYouRather({ language, onUpdateLanguage }) {
 						Would You Rather game.
 					</Link>
 				</h2>
-				<Link
-					to={{
-						pathname: "https://github.com/bruno-gurgel/would-you-rather",
-					}}
-					target="_blank"
-				>
-					<Button variant="warning" size="lg">
+
+				<Button variant="warning" size="lg" className={styles.button}>
+					<Link
+						to={{
+							pathname: "https://github.com/bruno-gurgel/would-you-rather",
+						}}
+						target="_blank"
+						className={styles.buttonLink}
+					>
 						<strong>Repository</strong>
-					</Button>
-				</Link>
+					</Link>
+				</Button>
 			</Container>
 			<Container className="mt-5 text-justify">
 				<p className={styles.introText}>

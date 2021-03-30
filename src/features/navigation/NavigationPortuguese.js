@@ -7,14 +7,14 @@ export default function NavigationPortuguese({ onUpdateLanguage, onBackClick }) 
 	return (
 		<div className={styles.navigation}>
 			<Link to={onBackClick}>
-				<Button variant="outline-warning" size="lg" className="mt-1">
+				<Button variant="outline-warning" size="lg" className={styles.btn}>
 					<strong>Voltar</strong>
 				</Button>
 			</Link>
 			<Button
 				variant="outline-warning"
 				size="lg"
-				className="mt-1"
+				className={styles.btn}
 				onClick={() => onUpdateLanguage("english")}
 			>
 				<strong>Change to English</strong>

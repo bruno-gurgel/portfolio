@@ -25,7 +25,7 @@ export default function ProjectsPortuguese({ onUpdateLanguage }) {
 						</Card.Title>
 						<div className={styles.btnContainer}>
 							<Link to="/projects/MyReads">
-								<Button variant="dark" size="lg">
+								<Button variant="dark" size="lg" className={styles.btn}>
 									<strong>Detalhes</strong>
 								</Button>
 							</Link>
@@ -40,7 +40,7 @@ export default function ProjectsPortuguese({ onUpdateLanguage }) {
 						</Card.Title>
 						<div className={styles.btnContainer}>
 							<Link to="/projects/WouldYouRather">
-								<Button variant="dark" size="lg">
+								<Button variant="dark" size="lg" className={styles.btn}>
 									<strong>Detalhes</strong>
 								</Button>
 							</Link>
