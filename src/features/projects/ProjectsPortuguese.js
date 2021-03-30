@@ -10,11 +10,7 @@ import Navigation from "../navigation";
 export default function ProjectsPortuguese({ onUpdateLanguage }) {
 	return (
 		<Container className={styles.projectsContainer}>
-			<Navigation
-				onUpdateLanguage={onUpdateLanguage}
-				language={"portuguese"}
-				backLocation="/"
-			/>
+			<Navigation onUpdateLanguage={onUpdateLanguage} language={"portuguese"} />
 			<div className={styles.cardBox}>
 				<Card className={styles.card}>
 					<Card.Header className="display-4">MyReads</Card.Header>

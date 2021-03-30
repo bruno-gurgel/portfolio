@@ -12,27 +12,30 @@ export default function introMyReads({ language, onUpdateLanguage }) {
 	}
 	return (
 		<Container className={styles.myReadsContainer}>
-			<Navigation
-				onUpdateLanguage={onUpdateLanguage}
-				language={language}
-				backLocation="/projects"
-			/>
+			<Navigation onUpdateLanguage={onUpdateLanguage} language={language} />
 			<Container>
 				<h1 className="display-3 text-white mt-4">MyReads</h1>
 				<h2 className={styles.subHeading}>
 					Bookshelf app that allows you to select and categorize your books.
 				</h2>
-				<Button variant="warning" size="lg" className={styles.button}>
-					<Link
-						to={{ pathname: "https://github.com/bruno-gurgel/MyReads" }}
-						target="_blank"
-						className={styles.buttonLink}
-					>
-						<strong>Repository</strong>
-					</Link>
-				</Button>
+				<div className={styles.btnBox}>
+					<Button variant="warning" size="lg" className={styles.button}>
+						<Link to="/MyReads" className={styles.buttonLink}>
+							<strong>Project</strong>
+						</Link>
+					</Button>
+					<Button variant="warning" size="lg" className={styles.button}>
+						<Link
+							to={{ pathname: "https://github.com/bruno-gurgel/MyReads" }}
+							target="_blank"
+							className={styles.buttonLink}
+						>
+							<strong>Repository</strong>
+						</Link>
+					</Button>
+				</div>
 			</Container>
-			<Container className="mt-5  text-justify">
+			<Container className="mt-4  text-justify">
 				<p className={styles.introText}>
 					In this project, I had to make a Single Page Application (SPA) that was a
 					bookshelf so that the users could organize what they were reading or wanting to
@@ -58,13 +61,6 @@ export default function introMyReads({ language, onUpdateLanguage }) {
 					like avoiding class components. Since I learned React without the hooks, I faced
 					some challenges, but I really learned a lot.
 				</p>
-				<div className={styles.buttonBox}>
-					<Button variant="warning" size="lg" className={styles.button}>
-						<Link to="/MyReads" className={styles.buttonLink}>
-							<strong>Here is the project so you can check it.</strong>
-						</Link>
-					</Button>
-				</div>
 			</Container>
 		</Container>
 	);

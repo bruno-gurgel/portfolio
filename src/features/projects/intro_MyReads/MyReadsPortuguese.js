@@ -8,25 +8,31 @@ import Navigation from "../../navigation";
 export default function introMyReadsPortuguese({ onUpdateLanguage }) {
 	return (
 		<Container className={styles.myReadsContainer}>
-			<Navigation
-				onUpdateLanguage={onUpdateLanguage}
-				language={"portuguese"}
-				backLocation="/projects"
-			/>
+			<Navigation onUpdateLanguage={onUpdateLanguage} language={"portuguese"} />
 			<Container>
 				<h1 className="display-3 text-white mt-4">MyReads</h1>
 				<h2 className={styles.subHeading}>
 					Aplicativo de estante virtual que permite selecionar e categorizar seus livros.
 				</h2>
-				<Button variant="warning" size="lg" className={styles.button}>
-					<Link
-						to={{ pathname: "https://github.com/bruno-gurgel/MyReads" }}
-						target="_blank"
-						className={styles.buttonLink}
-					>
-						<strong>Repositório</strong>
-					</Link>
-				</Button>
+				<p className={styles.introText}>
+					<span className="text-warning text-center">Obs: o projeto é em inglês!</span>
+				</p>
+				<div className={styles.btnBox}>
+					<Button variant="warning" size="lg" className={styles.button}>
+						<Link to="/MyReads" className={styles.buttonLink}>
+							<strong>Projeto</strong>
+						</Link>
+					</Button>
+					<Button variant="warning" size="lg" className={styles.button}>
+						<Link
+							to={{ pathname: "https://github.com/bruno-gurgel/MyReads" }}
+							target="_blank"
+							className={styles.buttonLink}
+						>
+							<strong>Repositório</strong>
+						</Link>
+					</Button>
+				</div>
 			</Container>
 			<Container className="mt-5">
 				<p className={styles.introText}>
@@ -55,16 +61,6 @@ export default function introMyReadsPortuguese({ onUpdateLanguage }) {
 					como evitar componentes de classe. Desde que aprendi React sem os hooks,
 					enfrentei alguns desafios, mas realmente aprendi muito.
 				</p>
-				<p className={styles.introText}>
-					<span className="text-warning text-center">Obs: o projeto é em inglês!</span>
-				</p>
-				<div className={styles.buttonBox}>
-					<Button variant="warning" size="lg" className={styles.button}>
-						<Link to="/MyReads" className={styles.buttonLink}>
-							<strong>Clique aqui para ver o projeto.</strong>
-						</Link>
-					</Button>
-				</div>
 			</Container>
 		</Container>
 	);

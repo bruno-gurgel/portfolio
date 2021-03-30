@@ -15,7 +15,7 @@ export default function Projects({ language, onUpdateLanguage }) {
 
 	return (
 		<Container className={styles.projectsContainer}>
-			<Navigation onUpdateLanguage={onUpdateLanguage} language={language} backLocation="/" />
+			<Navigation onUpdateLanguage={onUpdateLanguage} language={language} />
 			<div className={styles.cardBox}>
 				<Card className={styles.card}>
 					<Card.Header className="display-4">MyReads</Card.Header>

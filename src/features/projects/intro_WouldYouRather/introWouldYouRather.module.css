@@ -6,6 +6,12 @@
 	color: #e6e6e6;
 }
 
+.btnBox {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
 .introText {
 	font-size: 1.7rem;
 }
@@ -16,11 +22,6 @@
 
 .pageLink:hover {
 	color: #99e6ff;
-}
-
-.buttonBox {
-	width: 100%;
-	text-align: center;
 }
 
 .button {

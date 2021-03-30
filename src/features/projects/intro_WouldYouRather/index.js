@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./WouldYouRather.module.css";
+import styles from "./introWouldYouRather.module.css";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
@@ -12,11 +12,7 @@ export default function introWouldYouRather({ language, onUpdateLanguage }) {
 	}
 	return (
 		<Container className={styles.wouldYouRatherContainer}>
-			<Navigation
-				onUpdateLanguage={onUpdateLanguage}
-				language={language}
-				backLocation="/projects"
-			/>
+			<Navigation onUpdateLanguage={onUpdateLanguage} language={language} />
 			<Container>
 				<h1 className="display-3 text-white mt-4">Would You Rather...</h1>
 				<h2 className={styles.subHeading}>
@@ -31,20 +27,26 @@ export default function introWouldYouRather({ language, onUpdateLanguage }) {
 						Would You Rather game.
 					</Link>
 				</h2>
-
-				<Button variant="warning" size="lg" className={styles.button}>
-					<Link
-						to={{
-							pathname: "https://github.com/bruno-gurgel/would-you-rather",
-						}}
-						target="_blank"
-						className={styles.buttonLink}
-					>
-						<strong>Repository</strong>
-					</Link>
-				</Button>
+				<div className={styles.btnBox}>
+					<Button variant="warning" size="lg" className={styles.button}>
+						<Link to="/" className={styles.buttonLink}>
+							<strong>Project</strong>
+						</Link>
+					</Button>
+					<Button variant="warning" size="lg" className={styles.button}>
+						<Link
+							to={{
+								pathname: "https://github.com/bruno-gurgel/would-you-rather",
+							}}
+							target="_blank"
+							className={styles.buttonLink}
+						>
+							<strong>Repository</strong>
+						</Link>
+					</Button>
+				</div>
 			</Container>
-			<Container className="mt-5 text-justify">
+			<Container className="mt-4 text-justify">
 				<p className={styles.introText}>
 					In this project, I had to make a web app that lets a user play the “Would You
 					Rather?” game. The game goes like this: A user is asked a question in the form:
@@ -80,13 +82,6 @@ export default function introWouldYouRather({ language, onUpdateLanguage }) {
 					that abstracts a lot of the complicated parts like reducers and state updates,
 					it is really worth a try!
 				</p>
-				<div className={styles.buttonBox}>
-					<Button variant="warning" size="lg" className={styles.button}>
-						<Link to="/" className={styles.buttonLink}>
-							<strong>Here is the project so you can check it.</strong>
-						</Link>
-					</Button>
-				</div>
 			</Container>
 		</Container>
 	);
