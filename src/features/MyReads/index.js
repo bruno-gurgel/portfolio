@@ -5,18 +5,24 @@ import OpenSearch from "./OpenSearch";
 import Search from "./Search";
 import Shelfs from "./Shelfs";
 import { Route } from "react-router-dom";
+import LoadingBar from "react-top-loading-bar";
 
 export default function MyReads() {
 	const [didMount, setDidMount] = useState(false);
 	const [booksArray, handleBooks] = useState([]);
+	const [progress, setProgress] = useState(0);
+
 	useEffect(() => {
+		setProgress(1);
 		BooksAPI.getAll().then((books) => {
 			handleBooks(books);
 			setDidMount(true);
+			setProgress(100);
 		});
 	}, []);
 
 	const updateBookShelf = async (bookToUpdate, shelfToUpdate) => {
+		setProgress(1);
 		await BooksAPI.update(bookToUpdate, shelfToUpdate).then(async (updatedShelf) => {
 			const changeToArray = Object.values(updatedShelf).flat();
 			const booksInfoArray = await Promise.all(
@@ -25,10 +31,12 @@ export default function MyReads() {
 			handleBooks(booksInfoArray);
 			setDidMount(true);
 		});
+		setProgress(100);
 	};
 
 	return (
 		<div className={styles.myReads}>
+			<LoadingBar progress={progress} onLoaderFinished={() => setProgress(0)} />
 			<Route
 				path="/MyReads/search"
 				render={() => <Search booksArray={booksArray} updateShelf={updateBookShelf} />}
@@ -43,7 +51,11 @@ export default function MyReads() {
 						</div>
 						<div className={styles.listBooksContent}>
 							{didMount && (
-								<Shelfs booksArray={booksArray} updateShelf={updateBookShelf} />
+								<Shelfs
+									booksArray={booksArray}
+									updateShelf={updateBookShelf}
+									setProgress={setProgress}
+								/>
 							)}
 						</div>
 						<OpenSearch />
