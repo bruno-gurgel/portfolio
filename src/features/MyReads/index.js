@@ -28,7 +28,7 @@ export default function MyReads() {
 	};
 
 	return (
-		<div className="app">
+		<div className={styles.myReads}>
 			<Route
 				path="/MyReads/search"
 				render={() => <Search booksArray={booksArray} updateShelf={updateBookShelf} />}

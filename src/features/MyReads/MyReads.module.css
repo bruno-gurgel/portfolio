@@ -1,18 +1,8 @@
-/* html,
-body,
-.root {
-	height: 100%;
-}
-
-body {
-	line-height: 1.5;
-}
-
-body,
-.app {
-	background: white;
+.myReads {
 	background: linear-gradient(to right, #000000, #434343);
-} */
+	height: 100%;
+	overflow: auto;
+}
 
 /* main page */
 
@@ -92,15 +82,17 @@ body,
 
 .searchBooksInputWrapper {
 	flex: 1;
-	background: #e9e;
+	z-index: 1;
 }
 
 .searchBooksBar input {
 	width: 100%;
-	padding: 15px 10px;
+	height: 100%;
+	padding: 10px 10px;
 	font-size: 1.25em;
 	border: none;
 	outline: none;
+	color: #444;
 }
 
 .closeSearch {
