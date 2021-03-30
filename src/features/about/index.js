@@ -11,7 +11,7 @@ export default function About({ language, onUpdateLanguage }) {
 
 	return (
 		<Container className={styles.AboutContainer}>
-			<Navigation onUpdateLanguage={onUpdateLanguage} language={language} backLocation="/" />
+			<Navigation onUpdateLanguage={onUpdateLanguage} language={language} />
 			<h1 className="display-2 text-center">About me</h1>
 
 			<p className={styles.text}>

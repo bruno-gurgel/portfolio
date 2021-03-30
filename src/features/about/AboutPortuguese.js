@@ -2,17 +2,11 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import styles from "./about.module.css";
 import Navigation from "../navigation";
-import { Link } from "react-router-dom";
-import Button from "react-bootstrap/Button";
 
 export default function AboutPortuguese({ onUpdateLanguage }) {
 	return (
 		<Container className={styles.AboutContainer}>
-			<Navigation
-				onUpdateLanguage={onUpdateLanguage}
-				language={"portuguese"}
-				backLocation="/"
-			/>
+			<Navigation onUpdateLanguage={onUpdateLanguage} language={"portuguese"} />
 			<h1 className="display-2 text-center">Sobre mim</h1>
 
 			<p className={styles.text}>
