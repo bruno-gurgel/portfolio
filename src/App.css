@@ -28,13 +28,6 @@ body,
 	height: 100vh;
 }
 
-p,
-h1,
-h2 {
-	color: #ffffff;
-	font-weight: normal;
-}
-
 .App {
 	height: 100%;
 	background-color: #444;
