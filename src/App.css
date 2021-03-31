@@ -1,8 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;700&display=swap");
 
 * {
-	letter-spacing: 1px;
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+	letter-spacing: 0.1rem;
 	line-height: 1.5;
+}
+
+html {
+	font-size: 62.5%;
 }
 
 html,
@@ -14,7 +21,6 @@ html,
 body,
 #root {
 	font-family: "Dosis", sans-serif;
-	font-size: 16px;
 	box-sizing: border-box;
 }
 
@@ -22,9 +28,9 @@ body,
 	height: 100vh;
 }
 
+p,
 h1,
-h2,
-p {
+h2 {
 	color: #ffffff;
 	font-weight: normal;
 }
