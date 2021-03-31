@@ -5,8 +5,9 @@ import About from "./features/about";
 import Home from "./features/home";
 import Projects from "./features/projects";
 import IntroMyReads from "./features/projects/intro_MyReads";
-import WouldYouRather from "./features/projects/intro_WouldYouRather";
+import IntroWouldYouRather from "./features/projects/intro_WouldYouRather";
 import MyReads from "./features/MyReads";
+import WouldYouRather from "./features/WouldYouRather";
 
 function App() {
 	const [language, updateLanguage] = useState("english");
@@ -20,13 +21,16 @@ function App() {
 					<IntroMyReads language={language} onUpdateLanguage={updateLanguage} />
 				</Route>
 				<Route path="/projects/WouldYouRather">
-					<WouldYouRather language={language} onUpdateLanguage={updateLanguage} />
+					<IntroWouldYouRather language={language} onUpdateLanguage={updateLanguage} />
 				</Route>
 				<Route path="/projects">
 					<Projects language={language} onUpdateLanguage={updateLanguage} />
 				</Route>
 				<Route path="/MyReads">
 					<MyReads />
+				</Route>
+				<Route path="/WouldYouRather">
+					<WouldYouRather />
 				</Route>
 				<Route path="/">
 					<Home language={language} onUpdateLanguage={updateLanguage} />

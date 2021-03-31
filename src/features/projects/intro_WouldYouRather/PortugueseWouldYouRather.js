@@ -26,7 +26,7 @@ export default function introWouldYouRatherPortuguese({ onUpdateLanguage }) {
 					<span className="text-warning">Obs: o projeto é em inglês!</span>
 				</p>
 				<div className={styles.btnBox}>
-					<Link to="/" className={styles.btn}>
+					<Link to="/WouldYouRather" className={styles.btn}>
 						<strong>Projeto</strong>
 					</Link>
 

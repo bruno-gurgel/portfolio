@@ -28,7 +28,7 @@ export default function introWouldYouRather({ language, onUpdateLanguage }) {
 					</Link>
 				</h2>
 				<div className={styles.btnBox}>
-					<Link to="/" className={styles.btn}>
+					<Link to="/WouldYouRather" className={styles.btn}>
 						<strong>Project</strong>
 					</Link>
 
