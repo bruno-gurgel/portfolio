@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./introWouldYouRather.module.css";
 import Container from "react-bootstrap/Container";
-import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import Navigation from "../../navigation";
 
@@ -10,7 +9,7 @@ export default function introWouldYouRatherPortuguese({ onUpdateLanguage }) {
 		<Container className={styles.wouldYouRatherContainer}>
 			<Navigation onUpdateLanguage={onUpdateLanguage} language="portuguese" />
 			<Container>
-				<h1 className="display-3 text-white mt-4">Would You Rather...</h1>
+				<h1 className={styles.heading}>Would You Rather...</h1>
 				<h2 className={styles.subHeading}>
 					Variação do jogo{" "}
 					<Link
@@ -23,23 +22,23 @@ export default function introWouldYouRatherPortuguese({ onUpdateLanguage }) {
 						Would You Rather.
 					</Link>
 				</h2>
+				<p className={styles.introText}>
+					<span className="text-warning">Obs: o projeto é em inglês!</span>
+				</p>
 				<div className={styles.btnBox}>
-					<Button variant="warning" size="lg" className={styles.button}>
-						<Link to="/" className={styles.buttonLink}>
-							<strong>Projeto</strong>
-						</Link>
-					</Button>
-					<Button variant="warning" size="lg" className={styles.button}>
-						<Link
-							to={{
-								pathname: "https://github.com/bruno-gurgel/would-you-rather",
-							}}
-							target="_blank"
-							className={styles.buttonLink}
-						>
-							<strong>Repositório</strong>
-						</Link>
-					</Button>
+					<Link to="/" className={styles.btn}>
+						<strong>Projeto</strong>
+					</Link>
+
+					<Link
+						to={{
+							pathname: "https://github.com/bruno-gurgel/would-you-rather",
+						}}
+						target="_blank"
+						className={styles.btn}
+					>
+						<strong>Repositório</strong>
+					</Link>
 				</div>
 			</Container>
 			<Container className="mt-4 text-justify">
@@ -77,9 +76,6 @@ export default function introWouldYouRatherPortuguese({ onUpdateLanguage }) {
 					</Link>{" "}
 					que abstrai muitas das partes complicadas, como reducers e atualizações de
 					estado, vale realmente a pena tentar!
-				</p>
-				<p className={styles.introText}>
-					<span className="text-warning text-center">Obs: o projeto é em inglês!</span>
 				</p>
 			</Container>
 		</Container>

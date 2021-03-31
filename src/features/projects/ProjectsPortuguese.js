@@ -13,10 +13,10 @@ export default function ProjectsPortuguese({ onUpdateLanguage }) {
 				<Card className={styles.card}>
 					<Card.Header className={styles.cardHeading}>MyReads</Card.Header>
 					<Card.Body className={styles.cardBody}>
-						<Card.Title className={styles.cardText}>
+						<p className={styles.cardText}>
 							Aplicativo de estante virtual que permite selecionar e categorizar os
 							livros que você leu, está lendo ou quer ler.
-						</Card.Title>
+						</p>
 						<div className={styles.btnContainer}>
 							<Link to="/projects/MyReads" className={styles.btnDark}>
 								<strong>Detalhes</strong>
@@ -27,9 +27,9 @@ export default function ProjectsPortuguese({ onUpdateLanguage }) {
 				<Card className={styles.card}>
 					<Card.Header className={styles.cardHeading}>Would you Rather...</Card.Header>
 					<Card.Body className={styles.cardBody}>
-						<Card.Title className={styles.cardText}>
+						<p className={styles.cardText}>
 							Variação do jogo Would You Rather. Feito com Bootstrap, React & Redux.
-						</Card.Title>
+						</p>
 						<div className={styles.btnContainer}>
 							<Link to="/projects/WouldYouRather" className={styles.btnDark}>
 								<strong>Detalhes</strong>

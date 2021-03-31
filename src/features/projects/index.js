@@ -18,10 +18,11 @@ export default function Projects({ language, onUpdateLanguage }) {
 				<Card className={styles.card}>
 					<Card.Header className={styles.cardHeading}>MyReads</Card.Header>
 					<Card.Body className={styles.cardBody}>
-						<Card.Title className={styles.cardText}>
+						<p className={styles.cardText}>
 							Bookshelf app made with React that allows you to select and categorize
 							books you have read, are currently reading, or want to read.
-						</Card.Title>
+						</p>
+
 						<div className={styles.btnContainer}>
 							<Link to="/projects/MyReads" className={styles.btnDark}>
 								<strong>Details</strong>
@@ -32,10 +33,10 @@ export default function Projects({ language, onUpdateLanguage }) {
 				<Card className={styles.card}>
 					<Card.Header className={styles.cardHeading}>Would you Rather...</Card.Header>
 					<Card.Body className={styles.cardBody}>
-						<Card.Title className={styles.cardText}>
+						<p className={styles.cardText}>
 							Variation of the Would You Rather game. made with Bootstrap, React &
 							Redux.
-						</Card.Title>
+						</p>
 						<div className={styles.btnContainer}>
 							<Link to="/projects/WouldYouRather" className={styles.btnDark}>
 								<strong>Details</strong>

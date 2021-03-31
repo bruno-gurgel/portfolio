@@ -10,28 +10,25 @@ export default function introMyReadsPortuguese({ onUpdateLanguage }) {
 		<Container className={styles.myReadsContainer}>
 			<Navigation onUpdateLanguage={onUpdateLanguage} language={"portuguese"} />
 			<Container>
-				<h1 className="display-3 text-white mt-4">MyReads</h1>
+				<h1 className={styles.heading}>MyReads</h1>
 				<h2 className={styles.subHeading}>
 					Aplicativo de estante virtual que permite selecionar e categorizar seus livros.
 				</h2>
 				<p className={styles.introText}>
-					<span className="text-warning text-center">Obs: o projeto é em inglês!</span>
+					<span className="text-warning">Obs: o projeto é em inglês!</span>
 				</p>
 				<div className={styles.btnBox}>
-					<Button variant="warning" size="lg" className={styles.button}>
-						<Link to="/MyReads" className={styles.buttonLink}>
-							<strong>Projeto</strong>
-						</Link>
-					</Button>
-					<Button variant="warning" size="lg" className={styles.button}>
-						<Link
-							to={{ pathname: "https://github.com/bruno-gurgel/MyReads" }}
-							target="_blank"
-							className={styles.buttonLink}
-						>
-							<strong>Repositório</strong>
-						</Link>
-					</Button>
+					<Link to="/MyReads" className={styles.btn}>
+						<strong>Projeto</strong>
+					</Link>
+
+					<Link
+						to={{ pathname: "https://github.com/bruno-gurgel/MyReads" }}
+						target="_blank"
+						className={styles.btn}
+					>
+						<strong>Repositório</strong>
+					</Link>
 				</div>
 			</Container>
 			<Container className="mt-5">

@@ -39,7 +39,7 @@
 .btnDark {
 	font-size: 2rem;
 	padding: 0.8rem 1.6rem;
-	border: 1px solid #ffc107;
+	border: 0.1rem solid #ffc107;
 	border-radius: 0.5rem;
 
 	transition: all 0.2s;
@@ -53,11 +53,11 @@
 	color: #fff;
 	text-decoration: underline;
 
-	transform: translateY(-3px);
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	transform: translateY(-0.3rem);
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .btnDark:active {
 	transform: translateY(-1px);
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }

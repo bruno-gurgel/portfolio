@@ -14,7 +14,7 @@ export default function introWouldYouRather({ language, onUpdateLanguage }) {
 		<Container className={styles.wouldYouRatherContainer}>
 			<Navigation onUpdateLanguage={onUpdateLanguage} language={language} />
 			<Container>
-				<h1 className="display-3 text-white mt-4">Would You Rather...</h1>
+				<h1 className={styles.heading}>Would You Rather...</h1>
 				<h2 className={styles.subHeading}>
 					Variation of the{" "}
 					<Link
@@ -28,22 +28,19 @@ export default function introWouldYouRather({ language, onUpdateLanguage }) {
 					</Link>
 				</h2>
 				<div className={styles.btnBox}>
-					<Button variant="warning" size="lg" className={styles.button}>
-						<Link to="/" className={styles.buttonLink}>
-							<strong>Project</strong>
-						</Link>
-					</Button>
-					<Button variant="warning" size="lg" className={styles.button}>
-						<Link
-							to={{
-								pathname: "https://github.com/bruno-gurgel/would-you-rather",
-							}}
-							target="_blank"
-							className={styles.buttonLink}
-						>
-							<strong>Repository</strong>
-						</Link>
-					</Button>
+					<Link to="/" className={styles.btn}>
+						<strong>Project</strong>
+					</Link>
+
+					<Link
+						to={{
+							pathname: "https://github.com/bruno-gurgel/would-you-rather",
+						}}
+						target="_blank"
+						className={styles.btn}
+					>
+						<strong>Repository</strong>
+					</Link>
 				</div>
 			</Container>
 			<Container className="mt-4 text-justify">

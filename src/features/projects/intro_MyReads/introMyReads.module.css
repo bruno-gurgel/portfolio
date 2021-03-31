@@ -1,20 +1,58 @@
+/* UNIVERSAL */
+
+.btn,
+.btn:link,
+.btn:active {
+	font-size: 2rem;
+	background-color: inherit;
+	padding: 0.8rem 1.6rem;
+	color: #ffc107;
+	border: 1px solid #ffc107;
+	border-radius: 0.5rem;
+
+	transition: all 0.2s;
+}
+
+.btn:hover {
+	color: #ffc107;
+	text-decoration: underline;
+
+	transform: translateY(-0.3rem);
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+	transform: translateY(-0.1rem);
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+/* PAGE */
+
 .myReadsContainer {
 	color: #fff;
-	padding: 15px;
+	padding: 1.5rem;
+}
+
+.heading {
+	font-size: 7.2rem;
+	font-weight: 300;
+	line-height: 1.2;
+	margin-top: 2rem;
 }
 
 .subHeading {
+	font-size: 3rem;
 	color: #e6e6e6;
 }
 
 .btnBox {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 20px;
+	margin-top: 2rem;
 }
 
 .introText {
-	font-size: 1.7rem;
+	font-size: 2.5rem;
 }
 
 .pageLink {
@@ -23,28 +61,4 @@
 
 .pageLink:hover {
 	color: #99e6ff;
-}
-
-.button {
-	transition: all 0.2s;
-}
-
-.button:hover {
-	transform: translateY(-3px);
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.button:active {
-	transform: translateY(-1px);
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.buttonLink {
-	color: #212529;
-}
-
-.buttonLink:hover {
-	color: #212529;
-	background-color: #e0a800;
-	border-color: #d39e00;
 }

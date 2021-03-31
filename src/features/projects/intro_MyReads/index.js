@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./introMyReads.module.css";
 import Container from "react-bootstrap/Container";
-import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import MyReadsPortuguese from "./MyReadsPortuguese";
 import Navigation from "../../navigation";
@@ -14,25 +13,22 @@ export default function introMyReads({ language, onUpdateLanguage }) {
 		<Container className={styles.myReadsContainer}>
 			<Navigation onUpdateLanguage={onUpdateLanguage} language={language} />
 			<Container>
-				<h1 className="display-3 text-white mt-4">MyReads</h1>
+				<h1 className={styles.heading}>MyReads</h1>
 				<h2 className={styles.subHeading}>
 					Bookshelf app that allows you to select and categorize your books.
 				</h2>
 				<div className={styles.btnBox}>
-					<Button variant="warning" size="lg" className={styles.button}>
-						<Link to="/MyReads" className={styles.buttonLink}>
-							<strong>Project</strong>
-						</Link>
-					</Button>
-					<Button variant="warning" size="lg" className={styles.button}>
-						<Link
-							to={{ pathname: "https://github.com/bruno-gurgel/MyReads" }}
-							target="_blank"
-							className={styles.buttonLink}
-						>
-							<strong>Repository</strong>
-						</Link>
-					</Button>
+					<Link to="/MyReads" className={styles.btn}>
+						<strong>Project</strong>
+					</Link>
+
+					<Link
+						to={{ pathname: "https://github.com/bruno-gurgel/MyReads" }}
+						target="_blank"
+						className={styles.btn}
+					>
+						<strong>Repository</strong>
+					</Link>
 				</div>
 			</Container>
 			<Container className="mt-4  text-justify">

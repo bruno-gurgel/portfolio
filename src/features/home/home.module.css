@@ -17,13 +17,13 @@
 	color: #ffc107;
 	text-decoration: underline;
 
-	transform: translateY(-3px);
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	transform: translateY(-0.3rem);
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .btn:active {
-	transform: translateY(-1px);
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	transform: translateY(-0.1rem);
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 /* PAGE */
@@ -37,6 +37,7 @@
 
 	backface-visibility: hidden;
 	overflow-x: hidden;
+	color: #fff;
 }
 
 .navBtnBox {
@@ -66,7 +67,7 @@
 	display: flex;
 	width: 100%;
 	justify-content: center;
-	gap: 30px;
+	gap: 3rem;
 
 	animation: moveInBottom 0.5 ease-out 0.75s;
 }
@@ -74,11 +75,11 @@
 @keyframes moveInRight {
 	0% {
 		opacity: 0;
-		transform: translateX(100px);
+		transform: translateX(10rem);
 	}
 
 	80% {
-		transform: translate(-10px);
+		transform: translate(-1rem);
 	}
 
 	100% {
@@ -90,11 +91,11 @@
 @keyframes moveInLeft {
 	0% {
 		opacity: 0;
-		transform: translateX(-100px);
+		transform: translateX(-10rem);
 	}
 
 	80% {
-		transform: translate(10px);
+		transform: translate(1rem);
 	}
 
 	100% {
@@ -106,7 +107,7 @@
 @keyframes moveInBottom {
 	0% {
 		opacity: 0;
-		transform: translateY(30px);
+		transform: translateY(3rem);
 	}
 
 	100% {
