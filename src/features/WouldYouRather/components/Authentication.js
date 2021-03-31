@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import styles from "../WouldYouRather.module.css";
 import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
+import Card from "react-bootstrap/Card";
 import { handleNewUser, getUsers } from "../redux/modules/users";
 import { useDispatch, useSelector } from "react-redux";
 import { doAuthedUser } from "../redux/modules/authedUser";
@@ -66,15 +68,17 @@ export default function Authentication(props) {
 	}
 
 	return (
-		<div className="container card bg-light w-75 mt-5 p-0">
+		<Container className="card bg-light w-75 mt-5 p-0">
+			{/* <div className="container card bg-light w-75 mt-5 p-0 h-100 w-100"> */}
 			<Form onSubmit={handleLogIn}>
-				<h1 className="mb-4 card-header">Would you rather...</h1>
-				<h2>Please Sign in</h2>
+				<Card.Header>
+					<h1 className={styles.authCardTitle}>Would you rather...</h1>
+				</Card.Header>
+
+				<h2 className={styles.authCardSubTitle}>Please Sign in</h2>
 				<Form.Group controlId="formUserSelect" className="mt-3">
-					<Form.Control
-						as="select"
-						type="text"
-						className="input w-50"
+					<select
+						className={styles.input}
 						onChange={handleSelectChange}
 						defaultValue={selectedUser}
 					>
@@ -87,18 +91,14 @@ export default function Authentication(props) {
 								</option>
 							);
 						})}
-					</Form.Control>
-					<Button
-						variant="primary"
-						type="submit"
-						className="mt-2 button"
-						disabled={selectedUser === null}
-					>
+					</select>
+
+					<button type="submit" className={styles.btn} disabled={selectedUser === null}>
 						Login
-					</Button>
+					</button>
 				</Form.Group>
 			</Form>
-			<h3 className="mb-3">
+			<h3 className={styles.heading3}>
 				Don't have an account? <span className="text-info">Sign up!</span>
 			</h3>
 			{showAlert && (
@@ -108,20 +108,20 @@ export default function Authentication(props) {
 			)}
 			<Form onSubmit={handleSubmit}>
 				<Form.Group controlId="formNewUser" className="form-new-user mx-auto">
-					<Form.Control
+					<input
 						type="text"
 						placeholder="Enter your first and last name"
-						className="input"
+						className={styles.input}
 						name="Full Name Input"
 						onChange={handleInputChange}
 						required
 					/>
 				</Form.Group>
 				<Form.Group controlId="formNewUser" className="form-new-user mx-auto">
-					<Form.Control
+					<input
 						type="text"
 						placeholder="Enter an Username"
-						className="input"
+						className={styles.input}
 						name="Username Input"
 						onChange={handleInputChange}
 						required
@@ -129,7 +129,7 @@ export default function Authentication(props) {
 				</Form.Group>
 				<Form.Group
 					controlId="formNewUser"
-					className="form-new-user mx-auto"
+					className={styles.radioForm}
 					onChange={(event) => updateGender(event.target.value)}
 				>
 					<Form.Check
@@ -138,6 +138,7 @@ export default function Authentication(props) {
 						label="Male"
 						name="genderRadio"
 						value="male"
+						className={styles.radioBtn}
 						required
 					/>
 					<Form.Check
@@ -146,6 +147,7 @@ export default function Authentication(props) {
 						label="Female"
 						name="genderRadio"
 						value="female"
+						className={styles.radioBtn}
 						required
 					/>
 					<Form.Check
@@ -154,18 +156,17 @@ export default function Authentication(props) {
 						label="Other"
 						name="genderRadio"
 						value="other"
+						className={styles.radioBtn}
 						required
 					/>
 				</Form.Group>
-				<Button
-					variant="primary"
-					type="submit"
-					className="mt-3 button"
+				<button
+					className={styles.btn}
 					disabled={newFullName === "" || newUsername === "" || gender === null}
 				>
 					Sign Up
-				</Button>
+				</button>
 			</Form>
-		</div>
+		</Container>
 	);
 }
