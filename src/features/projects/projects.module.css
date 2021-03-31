@@ -1,13 +1,13 @@
 .projectsContainer {
 	height: 100%;
-	padding: 15px;
+	padding: 1.5rem;
 }
 
 .cardBox {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
-	margin-top: 20px;
+	margin-top: 2rem;
 	height: 100%;
 }
 
@@ -16,10 +16,19 @@
 	width: 45%;
 }
 
+.cardHeading {
+	font-size: 5.6rem;
+	font-weight: 300;
+	line-height: 1.2;
+}
 .cardBody {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+}
+
+.cardText {
+	font-size: 2rem;
 }
 
 .btnContainer {
@@ -27,16 +36,28 @@
 	justify-content: space-around;
 }
 
-.btn {
+.btnDark {
+	font-size: 2rem;
+	padding: 0.8rem 1.6rem;
+	border: 1px solid #ffc107;
+	border-radius: 0.5rem;
+
 	transition: all 0.2s;
+
+	background-color: #343a40;
+	border-color: #343a40;
+	color: #fff;
 }
 
-.btn:hover {
+.btnDark:hover {
+	color: #fff;
+	text-decoration: underline;
+
 	transform: translateY(-3px);
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.btn:active {
+.btnDark:active {
 	transform: translateY(-1px);
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }

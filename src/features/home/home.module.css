@@ -1,9 +1,39 @@
+/* UNIVERSAL */
+
+.btn,
+.btn:link,
+.btn:active {
+	font-size: 2rem;
+	background-color: inherit;
+	padding: 0.8rem 1.6rem;
+	color: #ffc107;
+	border: 1px solid #ffc107;
+	border-radius: 0.5rem;
+
+	transition: all 0.2s;
+}
+
+.btn:hover {
+	color: #ffc107;
+	text-decoration: underline;
+
+	transform: translateY(-3px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+	transform: translateY(-1px);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* PAGE */
+
 .home {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	gap: 50px;
+	gap: 5rem;
 
 	backface-visibility: hidden;
 	overflow-x: hidden;
@@ -12,7 +42,7 @@
 .navBtnBox {
 	width: 100%;
 	text-align: right;
-	padding-top: 15px;
+	padding-top: 1.5rem;
 
 	animation: moveInRight 1s ease-out;
 }
@@ -25,7 +55,7 @@
 }
 
 .heading {
-	font-size: 4.5rem;
+	font-size: 7.2rem;
 	font-weight: 300;
 	line-height: 1.2;
 
@@ -39,21 +69,6 @@
 	gap: 30px;
 
 	animation: moveInBottom 0.5 ease-out 0.75s;
-}
-
-.btn {
-	font-size: 2rem;
-	transition: all 0.2s;
-}
-
-.btn:hover {
-	transform: translateY(-3px);
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.btn:active {
-	transform: translateY(-1px);
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes moveInRight {

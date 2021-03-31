@@ -7,7 +7,7 @@ export default function AboutPortuguese({ onUpdateLanguage }) {
 	return (
 		<Container className={styles.AboutContainer}>
 			<Navigation onUpdateLanguage={onUpdateLanguage} language={"portuguese"} />
-			<h1 className="display-2 text-center">Sobre mim</h1>
+			<h1 className={styles.heading}>Sobre mim</h1>
 
 			<p className={styles.text}>
 				Olá! Meu nome é <span className={styles.span}>Bruno</span>, e eu sou um

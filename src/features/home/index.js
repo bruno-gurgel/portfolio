@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./home.module.css";
 import { Link } from "react-router-dom";
-import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import HomePortuguese from "./HomePortuguese.js";
 
@@ -12,32 +11,23 @@ export default function Home({ language, onUpdateLanguage }) {
 	return (
 		<div className={styles.home}>
 			<Container className={styles.navBtnBox}>
-				<Button
-					variant="outline-warning"
-					size="lg"
-					className={styles.btn}
-					onClick={() => onUpdateLanguage("portuguese")}
-				>
+				<button className={styles.btn} onClick={() => onUpdateLanguage("portuguese")}>
 					<strong>Mudar para Português</strong>
-				</Button>
+				</button>
 			</Container>
 			<div className={styles.homeMain}>
 				<h1 className={styles.heading}>Hi! My name is Bruno, nice to see you here.</h1>
 				<br />
 				<div className={styles.btnContainer}>
-					<Link to="/about">
-						<Button variant="outline-warning" size="lg" className={styles.btn}>
-							<strong>About</strong>
-						</Button>
+					<Link to="/about" className={styles.btn}>
+						<strong>About</strong>
 					</Link>
-					<Link to="/projects">
-						<Button variant="outline-warning" size="lg" className={styles.btn}>
-							<strong>Projects</strong>
-						</Button>
+					<Link to="/projects" className={styles.btn}>
+						<strong>Projects</strong>
 					</Link>
-					<Button variant="outline-warning" size="lg" className={styles.btn}>
+					<Link to="/contact" className={styles.btn}>
 						<strong>Contact</strong>
-					</Button>
+					</Link>
 				</div>
 			</div>
 		</div>

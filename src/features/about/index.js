@@ -12,7 +12,7 @@ export default function About({ language, onUpdateLanguage }) {
 	return (
 		<Container className={styles.AboutContainer}>
 			<Navigation onUpdateLanguage={onUpdateLanguage} language={language} />
-			<h1 className="display-2 text-center">About me</h1>
+			<h1 className={styles.heading}>About me</h1>
 
 			<p className={styles.text}>
 				Hello! My name is <span className={styles.span}>Bruno</span>, I'm from Brazil and I
