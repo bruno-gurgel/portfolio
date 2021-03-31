@@ -69,7 +69,6 @@ export default function Authentication(props) {
 
 	return (
 		<Container className="card bg-light w-75 mt-5 p-0">
-			{/* <div className="container card bg-light w-75 mt-5 p-0 h-100 w-100"> */}
 			<Form onSubmit={handleLogIn}>
 				<Card.Header>
 					<h1 className={styles.authCardTitle}>Would you rather...</h1>
@@ -93,7 +92,11 @@ export default function Authentication(props) {
 						})}
 					</select>
 
-					<button type="submit" className={styles.btn} disabled={selectedUser === null}>
+					<button
+						type="submit"
+						className={`${styles.btn} ${styles.blueBtn}`}
+						disabled={selectedUser === null}
+					>
 						Login
 					</button>
 				</Form.Group>
@@ -161,7 +164,7 @@ export default function Authentication(props) {
 					/>
 				</Form.Group>
 				<button
-					className={styles.btn}
+					className={`${styles.btn} ${styles.blueBtn}`}
 					disabled={newFullName === "" || newUsername === "" || gender === null}
 				>
 					Sign Up
