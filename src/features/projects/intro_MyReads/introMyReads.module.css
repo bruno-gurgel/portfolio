@@ -1,3 +1,5 @@
+/********* DESKTOP **********/
+
 /* UNIVERSAL */
 
 .btn,
@@ -61,4 +63,38 @@
 
 .pageLink:hover {
 	color: #99e6ff;
+}
+
+/********** RESPONSIVE **********/
+
+/***** Tablet ****/
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+	.heading {
+		font-size: 4rem;
+	}
+
+	.subHeading {
+		font-size: 1.8rem;
+	}
+}
+
+/***** Mobile ****/
+@media screen and (max-width: 599px) {
+	.heading {
+		font-size: 3.5rem;
+	}
+
+	.subHeading {
+		font-size: 1.3rem;
+	}
+
+	.introText {
+		font-size: 1.3rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.pageLink {
+		color: #99e6ff;
+	}
 }

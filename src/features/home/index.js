@@ -16,7 +16,9 @@ export default function Home({ language, onUpdateLanguage }) {
 				</button>
 			</Container>
 			<div className={styles.homeMain}>
-				<h1 className={styles.heading}>Hi! My name is Bruno, nice to see you here.</h1>
+				<h1 className={styles.heading}>
+					<span className={styles.hi}>Hi!</span> My name is Bruno, nice to see you here.
+				</h1>
 				<br />
 				<div className={styles.btnContainer}>
 					<Link to="/about" className={styles.btn}>

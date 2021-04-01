@@ -23,11 +23,9 @@ export default function Projects({ language, onUpdateLanguage }) {
 							books you have read, are currently reading, or want to read.
 						</p>
 
-						<div className={styles.btnContainer}>
-							<Link to="/projects/MyReads" className={styles.btnDark}>
-								<strong>Details</strong>
-							</Link>
-						</div>
+						<Link to="/projects/MyReads" className={styles.btnDark}>
+							<strong>Details</strong>
+						</Link>
 					</Card.Body>
 				</Card>
 				<Card className={styles.card}>
@@ -37,11 +35,10 @@ export default function Projects({ language, onUpdateLanguage }) {
 							Variation of the Would You Rather game. made with Bootstrap, React &
 							Redux.
 						</p>
-						<div className={styles.btnContainer}>
-							<Link to="/projects/WouldYouRather" className={styles.btnDark}>
-								<strong>Details</strong>
-							</Link>
-						</div>
+
+						<Link to="/projects/WouldYouRather" className={styles.btnDark}>
+							<strong>Details</strong>
+						</Link>
 					</Card.Body>
 				</Card>
 			</div>

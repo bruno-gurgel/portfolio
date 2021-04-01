@@ -1,3 +1,5 @@
+/********* DESKTOP **********/
+
 /* UNIVERSAL */
 
 .btn,
@@ -31,4 +33,21 @@
 .navigation {
 	display: flex;
 	justify-content: flex-end;
+}
+
+/********** RESPONSIVE **********/
+
+/***** Tablet ****/
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+	.navigation {
+		justify-content: center;
+	}
+}
+
+/***** Mobile ****/
+@media screen and (max-width: 599px) {
+	.navigation {
+		justify-content: center;
+	}
 }

@@ -17,11 +17,10 @@ export default function ProjectsPortuguese({ onUpdateLanguage }) {
 							Aplicativo de estante virtual que permite selecionar e categorizar os
 							livros que você leu, está lendo ou quer ler.
 						</p>
-						<div className={styles.btnContainer}>
-							<Link to="/projects/MyReads" className={styles.btnDark}>
-								<strong>Detalhes</strong>
-							</Link>
-						</div>
+
+						<Link to="/projects/MyReads" className={styles.btnDark}>
+							<strong>Detalhes</strong>
+						</Link>
 					</Card.Body>
 				</Card>
 				<Card className={styles.card}>
@@ -30,11 +29,10 @@ export default function ProjectsPortuguese({ onUpdateLanguage }) {
 						<p className={styles.cardText}>
 							Variação do jogo Would You Rather. Feito com Bootstrap, React & Redux.
 						</p>
-						<div className={styles.btnContainer}>
-							<Link to="/projects/WouldYouRather" className={styles.btnDark}>
-								<strong>Detalhes</strong>
-							</Link>
-						</div>
+
+						<Link to="/projects/WouldYouRather" className={styles.btnDark}>
+							<strong>Detalhes</strong>
+						</Link>
 					</Card.Body>
 				</Card>
 			</div>
