@@ -74,15 +74,11 @@ export default function Dashboard() {
 				: returnPreviewCards(questionsNotAnsweredList)}
 			<div className="p-2" id="icons-attribute">
 				Icons made by{" "}
-				<a
-					href="https://www.flaticon.com/authors/icongeek26"
-					title="Icongeek26"
-					className={styles.avatarLinks}
-				>
+				<a href="https://www.flaticon.com/authors/icongeek26" title="Icongeek26">
 					Icongeek26
 				</a>{" "}
 				from{" "}
-				<a href="https://www.flaticon.com/" title="Flaticon" className={styles.avatarLinks}>
+				<a href="https://www.flaticon.com/" title="Flaticon">
 					www.flaticon.com
 				</a>
 			</div>

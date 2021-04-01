@@ -71,10 +71,10 @@ export default function Authentication(props) {
 		<Container className="card bg-light w-75 mt-5 p-0">
 			<Form onSubmit={handleLogIn}>
 				<Card.Header>
-					<h1 className={styles.authCardTitle}>Would you rather...</h1>
+					<h1>Would you rather...</h1>
 				</Card.Header>
 
-				<h2 className={styles.authCardSubTitle}>Please Sign in</h2>
+				<h2>Please Sign in</h2>
 				<Form.Group controlId="formUserSelect" className="mt-3">
 					<select
 						className={styles.input}
@@ -101,7 +101,7 @@ export default function Authentication(props) {
 					</button>
 				</Form.Group>
 			</Form>
-			<h3 className={styles.heading3}>
+			<h3 className="mb-3">
 				Don't have an account? <span className="text-info">Sign up!</span>
 			</h3>
 			{showAlert && (

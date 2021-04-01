@@ -32,11 +32,9 @@ export default function NewQuestion() {
 
 	return (
 		<Container className="card mt-4">
-			<h2 className={styles.heading2NewCard}>Create new Question</h2>
-			<h3 className={`${styles.heading3NewQuestion} ${styles.muted}`}>
-				Complete the question:
-			</h3>
-			<h4 className={styles.heading4NewCard}>Would you rather...</h4>
+			<h2>Create new Question</h2>
+			<h3 className="text-muted text-left">Complete the question:</h3>
+			<h4>Would you rather...</h4>
 			<Form className="mt-4" onSubmit={onSubmit}>
 				<input
 					placeholder="Question one"

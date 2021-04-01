@@ -16,13 +16,13 @@ export default function Navigation() {
 
 	return (
 		<Nav variant="pills" defaultActiveKey="/" className={styles.nav}>
-			<Nav.Link as={NavLink} exact to="/WouldYouRather" className={styles.navItem}>
+			<Nav.Link as={NavLink} exact to="/WouldYouRather">
 				Home
 			</Nav.Link>
-			<Nav.Link as={NavLink} to="/WouldYouRather/add" className={styles.navItem}>
+			<Nav.Link as={NavLink} to="/WouldYouRather/add">
 				New Question
 			</Nav.Link>
-			<Nav.Link as={NavLink} to="/WouldYouRather/leaderboard" className={styles.navItem}>
+			<Nav.Link as={NavLink} to="/WouldYouRather/leaderboard">
 				Leaderboard
 			</Nav.Link>
 

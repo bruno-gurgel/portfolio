@@ -6,14 +6,21 @@
 	width: 100%;
 	background-color: #fff;
 	overflow: auto;
+
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+		"Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .input {
 	margin: 0 auto;
 	width: 50%;
-	font-size: 1.1rem;
+	font-size: 1rem;
 	display: block;
 	text-align: center;
+	padding: 0.3rem;
+	border: 1px solid #ccc;
 }
 
 .btn {
@@ -28,10 +35,6 @@
 .btn:disabled {
 	opacity: 0.5;
 	cursor: default;
-}
-
-.muted {
-	color: #6c757d;
 }
 
 .blueBtn {
@@ -105,7 +108,6 @@
 }
 
 .userCardTitle {
-	font-size: 1.25rem;
 	text-align: left;
 	padding: 0.5rem;
 	background-color: #f2f2f2;
@@ -113,32 +115,14 @@
 
 /* AUTHENTICATION */
 
-.authCardTitle {
-	font-size: 3.4rem;
-}
-
-.authCardSubTitle {
-	margin-top: 0.6rem;
-	font-size: 1.9rem;
-}
-
-.heading3 {
-	font-size: 1.75rem;
-	margin-bottom: 1rem;
-}
-
 .radioForm {
-	margin: 1.9rem auto;
+	margin: 1.2rem auto;
 	display: flex;
 	justify-content: center;
 	gap: 1.9rem;
 }
 
 /* NAVIGATION */
-
-.navItem {
-	font-size: 1.1rem;
-}
 
 .nav {
 	display: flex;
@@ -155,7 +139,7 @@
 	background-color: #17a2b8;
 	border: 1px solid #17a2b8;
 	color: #fff;
-	font-size: 1.25rem;
+	font-size: 1.2rem;
 	width: 50%;
 }
 
@@ -163,7 +147,7 @@
 	background-color: #117a8b;
 	border: 1px solid #10707f;
 	color: #fff;
-	font-size: 1.25rem;
+	font-size: 1.2rem;
 	width: 50%;
 }
 
@@ -180,10 +164,6 @@
 	font-size: 1rem;
 }
 
-.avatarLinks {
-	font-size: 1rem;
-}
-
 /* PreviewCard */
 .userCard {
 	list-style-type: none;
@@ -194,26 +174,12 @@
 	height: 7.5rem;
 }
 
-.heading6 {
-	font-size: 1.2rem;
-	text-align: left;
-}
-
 /* NewQuestion */
 
 .heading4NewCard {
 	font-size: 2rem;
 	border-bottom: 1px solid #dee2e6;
 	padding: 1rem;
-}
-
-.heading3NewQuestion {
-	font-size: 1.75rem;
-	text-align: left;
-}
-
-.heading4NewCard {
-	font-size: 1.5rem;
 }
 
 .orNewQuestion {
@@ -245,7 +211,6 @@
 }
 
 .scoreCardTitle {
-	font-size: 1rem;
 	padding: 0.5rem;
 	font-weight: bold;
 	background-color: #f2f2f2;

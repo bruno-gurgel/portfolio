@@ -26,9 +26,9 @@ export default function PoolResults(props) {
 							<h6 className="font-weight-light card-header">
 								{props.optionOne}
 								{props.selectedAnswer === "optionOne" && (
-									<span className="selected-badge badge badge-pill badge-warning">
+									<Badge pill variant="warning" className={styles.selectedBadge}>
 										Your answer
-									</span>
+									</Badge>
 								)}
 							</h6>
 							<ProgressBar

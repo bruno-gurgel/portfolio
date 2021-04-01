@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "../WouldYouRather.module.css";
 import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
 
 export default function PreviewCard(props) {
 	return (
@@ -15,7 +14,7 @@ export default function PreviewCard(props) {
 					}}
 				/>
 				<div className={styles.userDetails}>
-					<h6 className={styles.heading6}>Would you rather:</h6>
+					<h6 className="text-left">Would you rather:</h6>
 					<p className="font-italic">...{props.questionPreview}...</p>
 					<Link
 						to={`/WouldYouRather/questions/${props.id}`}
@@ -28,10 +27,3 @@ export default function PreviewCard(props) {
 		</div>
 	);
 }
-
-PreviewCard.propTypes = {
-	id: PropTypes.string.isRequired,
-	avatar: PropTypes.string.isRequired,
-	questionAuthor: PropTypes.string.isRequired,
-	questionPreview: PropTypes.string.isRequired,
-};
