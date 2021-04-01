@@ -34,3 +34,11 @@ body,
 	background-color: #444;
 	overflow: auto;
 }
+
+/********** RESPONSIVE **********/
+
+@media screen and (max-width: 599px) {
+	.App {
+		overflow: visible;
+	}
+}

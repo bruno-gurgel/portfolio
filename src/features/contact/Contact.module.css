@@ -1,0 +1,82 @@
+.contactContainer {
+	color: #fff;
+	margin-top: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+}
+
+.heading {
+	text-align: center;
+	font-size: 4.5rem;
+}
+
+.contactList {
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 1rem;
+	list-style-type: none;
+	width: 100%;
+}
+
+.contactLink {
+	font-size: 2rem;
+	color: #99e6ff;
+}
+
+.contactMail {
+	font-size: 2rem;
+	color: #99e6ff;
+	cursor: pointer;
+	margin: 0;
+}
+
+.contactLink:hover,
+.contactMail:hover {
+	color: #99e6ff;
+}
+
+.contactMailItem:hover p {
+	display: none;
+}
+
+.contactMailItem:hover::after {
+	content: "Copy to Clipboard";
+	font-size: 2.3rem;
+	color: #99e6ff;
+	cursor: pointer;
+}
+
+.contactMailItem:active::after {
+	content: "Copied";
+	font-size: 2.3rem;
+	color: #99e6ff;
+	cursor: pointer;
+	padding: 1rem 5rem;
+}
+
+/********** RESPONSIVE **********/
+
+@media screen and (max-width: 599px) {
+	.contactMailItem:hover p {
+		display: inline-block;
+	}
+
+	.contactMailItem:hover::after {
+		content: "";
+	}
+
+	.contactMailItem:active p {
+		display: none;
+	}
+
+	.contactMailItem:active::after {
+		content: "Copied to Clipboard";
+		font-size: 2rem;
+		color: #99e6ff;
+		cursor: pointer;
+	}
+}
