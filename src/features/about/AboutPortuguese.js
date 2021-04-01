@@ -1,11 +1,10 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
 import styles from "./about.module.css";
 import Navigation from "../navigation";
 
 export default function AboutPortuguese({ onUpdateLanguage }) {
 	return (
-		<Container className={styles.AboutContainer}>
+		<div className={styles.AboutContainer}>
 			<Navigation onUpdateLanguage={onUpdateLanguage} language={"portuguese"} />
 			<h1 className={styles.heading}>Sobre mim</h1>
 
@@ -37,6 +36,6 @@ export default function AboutPortuguese({ onUpdateLanguage }) {
 			<p className="text-center">
 				<span className={styles.span}>Seja bem vindo(a)!</span>
 			</p>
-		</Container>
+		</div>
 	);
 }

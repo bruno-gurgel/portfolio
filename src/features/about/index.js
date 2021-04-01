@@ -1,5 +1,4 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
 import styles from "./about.module.css";
 import Navigation from "../navigation";
 import AboutPortuguese from "./AboutPortuguese";
@@ -10,7 +9,7 @@ export default function About({ language, onUpdateLanguage }) {
 	}
 
 	return (
-		<Container className={styles.AboutContainer}>
+		<div className={styles.AboutContainer}>
 			<Navigation onUpdateLanguage={onUpdateLanguage} language={language} />
 			<h1 className={styles.heading}>About me</h1>
 
@@ -39,9 +38,9 @@ export default function About({ language, onUpdateLanguage }) {
 				a playground to test new technologies and skills I learn. So don't expect this site
 				to stay the same for a long time.
 			</p>
-			<p className="text-center">
+			<p className="text-center m-0">
 				<span className={styles.span}>Welcome!</span>
 			</p>
-		</Container>
+		</div>
 	);
 }

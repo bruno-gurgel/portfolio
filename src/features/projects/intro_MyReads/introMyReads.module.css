@@ -70,6 +70,10 @@
 /***** Tablet ****/
 
 @media screen and (min-width: 600px) and (max-width: 900px) {
+	.myReadsContainer {
+		overflow-y: auto;
+	}
+
 	.heading {
 		font-size: 4rem;
 	}
@@ -81,6 +85,10 @@
 
 /***** Mobile ****/
 @media screen and (max-width: 599px) {
+	.myReadsContainer {
+		overflow-y: auto;
+	}
+
 	.heading {
 		font-size: 3.5rem;
 	}
