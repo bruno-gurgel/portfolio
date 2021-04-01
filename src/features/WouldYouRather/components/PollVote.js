@@ -23,7 +23,7 @@ export default function PollVote(props) {
 		).then(() => dispatch(fetchAllData()));
 	};
 	return (
-		<div className={styles.pollVoteCard}>
+		<div className={styles.pollCard}>
 			<h5 className={styles.userCardTitle}>{authorName} asks:</h5>
 			<div className="d-flex">
 				<div
@@ -45,7 +45,6 @@ export default function PollVote(props) {
 							name="pollVote"
 							value="optionOne"
 							className={styles.pollVoteRadio}
-							// className="text-left"
 							required
 						/>
 						<Form.Check
@@ -54,7 +53,6 @@ export default function PollVote(props) {
 							name="pollVote"
 							value="optionTwo"
 							className={styles.pollVoteRadio}
-							// className="text-left"
 							required
 						/>
 						<Button type="submit" className={styles.greenBtn}>
