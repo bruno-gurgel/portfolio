@@ -32,5 +32,6 @@ body,
 .App {
 	height: 100%;
 	background-color: #444;
-	overflow: auto;
+	overflow-y: scroll;
+	overflow-x: auto;
 }
