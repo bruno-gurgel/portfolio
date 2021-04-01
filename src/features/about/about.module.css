@@ -34,29 +34,33 @@
 
 @media screen and (min-width: 600px) and (max-width: 900px) {
 	.AboutContainer {
-		gap: 1rem;
+		gap: 0;
 	}
 
 	.heading {
 		font-size: 4rem;
+		margin: 0.8rem 0;
 	}
 
 	.text {
 		font-size: 1.4rem;
+		margin-bottom: 0.8rem;
 	}
 }
 
 /***** Mobile ****/
 @media screen and (max-width: 599px) {
 	.AboutContainer {
-		gap: 1rem;
+		gap: 0;
 	}
 
 	.heading {
 		font-size: 3.5rem;
+		margin: 1rem 0;
 	}
 
 	.text {
 		font-size: 1.3rem;
+		margin-bottom: 1rem;
 	}
 }
