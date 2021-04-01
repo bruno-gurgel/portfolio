@@ -110,7 +110,7 @@ export default function Authentication(props) {
 				</Alert>
 			)}
 			<Form onSubmit={handleSubmit}>
-				<Form.Group controlId="formNewUser" className="form-new-user mx-auto">
+				<Form.Group controlId="formNewUser" className="mx-auto">
 					<input
 						type="text"
 						placeholder="Enter your first and last name"
@@ -120,7 +120,7 @@ export default function Authentication(props) {
 						required
 					/>
 				</Form.Group>
-				<Form.Group controlId="formNewUser" className="form-new-user mx-auto">
+				<Form.Group controlId="formNewUser" className="mx-auto">
 					<input
 						type="text"
 						placeholder="Enter an Username"
