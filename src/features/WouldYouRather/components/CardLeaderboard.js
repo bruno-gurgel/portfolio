@@ -1,36 +1,28 @@
 import React from "react";
-import PropTypes from "prop-types";
+import styles from "../WouldYouRather.module.css";
 
 export default function CardLeaderboard(props) {
-  return (
-    <li className="contact-list-item d-flex w-50 mx-auto border">
-      <div
-        className="contact-avatar avatar-leaderboard"
-        style={{
-          backgroundImage: `url(${props.avatar})`,
-        }}
-      />
-      <div className="contact-details">
-        <h5 className="card-header">{props.user}</h5>
-        <p className="text-left d-flex justify-content-between mt-3 font-weight-bold">
-          Answered questions<span>{props.answeredQuestions}</span>
-        </p>
-        <p className="text-left d-flex justify-content-between border-top pt-2 font-weight-bold">
-          Created questions<span>{props.createdQuestions}</span>
-        </p>
-      </div>
-      <div className="ml-3 d-flex flex-column justify-content-between">
-        <h6 className="card-header">Score</h6>
-        <p className="number-circle">{props.score}</p>
-      </div>
-    </li>
-  );
+	return (
+		<div className={styles.leaderboardCard}>
+			<div
+				className={`${styles.userAvatar} ${styles.leaderboardCardAvatar}`}
+				style={{
+					backgroundImage: `url(/${props.avatar})`,
+				}}
+			/>
+			<div className={styles.userDetails}>
+				<h5 className={styles.userCardTitle}>{props.user}</h5>
+				<p className="text-left d-flex justify-content-between mt-3 font-weight-bold">
+					Answered questions<span>{props.answeredQuestions}</span>
+				</p>
+				<p className="text-left d-flex justify-content-between border-top pt-2 font-weight-bold">
+					Created questions<span>{props.createdQuestions}</span>
+				</p>
+			</div>
+			<div className="ml-3 d-flex flex-column justify-content-between">
+				<h6 className={styles.scoreCardTitle}>Score</h6>
+				<p className={styles.scoreCircle}>{props.score}</p>
+			</div>
+		</div>
+	);
 }
-
-CardLeaderboard.propTypes = {
-  avatar: PropTypes.string.isRequired,
-  user: PropTypes.string.isRequired,
-  answeredQuestions: PropTypes.number.isRequired,
-  createdQuestions: PropTypes.number.isRequired,
-  score: PropTypes.number.isRequired,
-};
