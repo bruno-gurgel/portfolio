@@ -5,7 +5,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { getAuthedUser } from "../redux/modules/authedUser";
 import { handleNewAnswer } from "../redux/modules/shared";
 import { fetchAllData } from "../redux/modules/shared";
-import PropTypes from "prop-types";
 
 export default function PollVote(props) {
 	const dispatch = useDispatch();
@@ -74,11 +73,3 @@ export default function PollVote(props) {
 		</div>
 	);
 }
-
-PollVote.propTypes = {
-	authorName: PropTypes.string.isRequired,
-	authorAvatar: PropTypes.string.isRequired,
-	optionOne: PropTypes.string.isRequired,
-	optionTwo: PropTypes.string.isRequired,
-	questionID: PropTypes.string.isRequired,
-};

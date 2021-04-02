@@ -16,13 +16,13 @@ export default function Navigation() {
 
 	return (
 		<Nav variant="pills" defaultActiveKey="/" className={styles.nav}>
-			<Nav.Link as={NavLink} exact to="/WouldYouRather">
+			<Nav.Link as={NavLink} exact to="/WouldYouRather" className={styles.navItem}>
 				Home
 			</Nav.Link>
-			<Nav.Link as={NavLink} to="/WouldYouRather/add">
+			<Nav.Link as={NavLink} to="/WouldYouRather/add" className={styles.navItem}>
 				New Question
 			</Nav.Link>
-			<Nav.Link as={NavLink} to="/WouldYouRather/leaderboard">
+			<Nav.Link as={NavLink} to="/WouldYouRather/leaderboard" className={styles.navItem}>
 				Leaderboard
 			</Nav.Link>
 
@@ -31,6 +31,30 @@ export default function Navigation() {
 				id="nav-dropdown"
 				className={styles.navDropdown}
 			>
+				<NavDropdown.Item
+					as={NavLink}
+					exact
+					to="/WouldYouRather"
+					className={`${styles.navDropdownItem} ${styles.active} ${styles.responsiveNavItems}`}
+				>
+					Home
+				</NavDropdown.Item>
+				<NavDropdown.Item
+					as={NavLink}
+					exact
+					to="/WouldYouRather/add"
+					className={`${styles.navDropdownItem} ${styles.active} ${styles.responsiveNavItems}`}
+				>
+					New Question
+				</NavDropdown.Item>
+				<NavDropdown.Item
+					as={NavLink}
+					exact
+					to="/WouldYouRather/leaderboard"
+					className={`${styles.navDropdownItem} ${styles.active} ${styles.responsiveNavItems}`}
+				>
+					Leaderboard
+				</NavDropdown.Item>
 				<NavDropdown.Item
 					as={NavLink}
 					exact

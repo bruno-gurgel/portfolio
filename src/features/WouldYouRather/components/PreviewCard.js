@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function PreviewCard(props) {
 	return (
-		<div className={styles.userCard}>
+		<div>
 			<h5 className={styles.userCardTitle}>{props.questionAuthor} asks:</h5>
 			<div className="d-flex">
 				<div

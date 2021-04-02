@@ -50,7 +50,7 @@ export default function Dashboard() {
 	};
 
 	return (
-		<Container fluid="md" className="w-50 border p-0 overflow-hidden mt-4">
+		<Container fluid="md" className={styles.dashboardContainer}>
 			<Row>
 				<button
 					className={viewAnsweredQuestions ? styles.headingBtn : styles.headingBtnActive}

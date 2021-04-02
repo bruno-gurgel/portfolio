@@ -1,5 +1,6 @@
-/* SHARED */
+/********* DESKTOP **********/
 
+/* SHARED */
 .wouldYouRather {
 	text-align: center;
 	height: 100%;
@@ -134,7 +135,24 @@
 	font-size: 1.1rem;
 }
 
+.navDropdown div {
+	width: 100%;
+	text-align: center;
+}
+
+.responsiveNavItems {
+	display: none;
+}
+
 /* DASHBOARD */
+.dashboardContainer {
+	width: 50%;
+	border: 1px solid #ccc;
+	padding: 0;
+	overflow: hidden;
+	margin-top: 1.5rem;
+}
+
 .headingBtn {
 	background-color: #17a2b8;
 	border: 1px solid #17a2b8;
@@ -165,9 +183,6 @@
 }
 
 /* PreviewCard */
-.userCard {
-	list-style-type: none;
-}
 
 .avatarPreview {
 	width: 7.5rem;
@@ -175,6 +190,11 @@
 }
 
 /* NewQuestion */
+
+.newQuestionsubHeading {
+	text-align: left;
+	color: #6c757d;
+}
 
 .heading4NewCard {
 	font-size: 2rem;
@@ -236,6 +256,10 @@
 	border: 1px solid #ccc;
 }
 
+.PollResultDetails {
+	display: flex;
+}
+
 .pollVoteRadio {
 	text-align: left;
 	display: flex;
@@ -246,4 +270,265 @@
 	position: absolute;
 	top: 0px;
 	right: 0px;
+}
+
+/********** RESPONSIVE **********/
+
+/***** Tablet ****/
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+	/* SHARED */
+
+	.input {
+		width: 60%;
+	}
+
+	/* AUTHENTICATION */
+
+	/* NAVIGATION */
+
+	.nav {
+		flex-direction: column;
+	}
+
+	.navItem {
+		display: none;
+	}
+
+	.responsiveNavItems {
+		display: block;
+	}
+
+	.navDropdown {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.navDropdown div {
+		width: 100%;
+		text-align: center;
+	}
+
+	/* DASHBOARD */
+
+	.dashboardContainer {
+		width: 70%;
+	}
+
+	.headingBtn {
+		font-size: 1rem;
+		padding: 0.5rem;
+	}
+
+	.headingBtnActive {
+		font-size: 1rem;
+		padding: 0.5rem;
+	}
+
+	/* PreviewCard */
+
+	.avatarPreview {
+		width: 6rem;
+		height: 6rem;
+	}
+
+	.greenBtn {
+		width: 60%;
+	}
+
+	/* Poll */
+
+	.pollCard {
+		width: 70%;
+	}
+
+	.PollResultDetails {
+		display: flex;
+	}
+
+	.pollCard div .avatarPreview {
+		width: 6.5rem;
+		height: 6.5em;
+	}
+
+	.selectedBadge {
+		font-size: 0.7rem;
+	}
+
+	/* NewQuestion */
+
+	.newQuestionsubHeading {
+		margin-top: 0.8rem;
+		font-size: 1.5rem;
+	}
+
+	.newQuestionwouldYouRather {
+		font-size: 1.25rem;
+		margin-top: 0.8rem;
+	}
+
+	/* CardLeaderboard */
+
+	.leaderboardCard {
+		flex-direction: column;
+		width: 60%;
+	}
+
+	.leaderboardCardAvatar {
+		width: 6.5rem;
+		height: 6.5rem;
+		margin: 0 auto;
+	}
+
+	.leaderboardCard .userDetails .userCardTitle {
+		text-align: center;
+	}
+
+	.scoreCardTitle {
+		margin-top: 0.5rem;
+	}
+
+	.scoreCircle {
+		width: 30%;
+	}
+}
+
+/***** Mobile ****/
+@media screen and (max-width: 599px) {
+	/* SHARED */
+
+	.input {
+		width: 85%;
+	}
+
+	/* AUTHENTICATION */
+
+	.radioForm {
+		gap: 0.5rem;
+	}
+
+	/* NAVIGATION */
+
+	.nav {
+		flex-direction: column;
+	}
+
+	.navItem {
+		display: none;
+	}
+
+	.responsiveNavItems {
+		display: block;
+	}
+
+	.navDropdown {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.navDropdown div {
+		width: 100%;
+		text-align: center;
+	}
+
+	/* DASHBOARD */
+
+	.dashboardContainer {
+		width: 90%;
+	}
+
+	.headingBtn {
+		font-size: 1rem;
+		padding: 0.6rem;
+	}
+
+	.headingBtnActive {
+		font-size: 1rem;
+		padding: 0.6rem;
+	}
+
+	.userCardTitle {
+		font-size: 1rem;
+	}
+
+	/* PreviewCard */
+
+	.avatarPreview {
+		width: 5rem;
+		height: 5rem;
+	}
+
+	.userDetails {
+		padding: 0 1rem;
+	}
+
+	.userDetails p {
+		font-size: 0.8rem;
+	}
+
+	.greenBtn {
+		width: 100%;
+	}
+
+	/* Poll */
+
+	.pollCard {
+		width: 85%;
+	}
+
+	.pollCard div .avatarPreview {
+		width: 6rem;
+		height: 6em;
+	}
+
+	.userDetails .pollVoteForm .greenBtn {
+		margin-top: 0.8rem;
+		width: 80%;
+	}
+
+	.selectedBadge {
+		font-size: 0.7rem;
+	}
+
+	/* NewQuestion */
+
+	.newQuestionHeading {
+		font-size: 1.75rem;
+	}
+
+	.newQuestionsubHeading {
+		font-size: 1.25rem;
+		margin-top: 0.8rem;
+	}
+
+	.newQuestionwouldYouRather {
+		font-size: 1.1rem;
+		margin-top: 0.8rem;
+	}
+
+	/* CardLeaderboard */
+
+	.leaderboardCard {
+		flex-direction: column;
+		width: 80%;
+	}
+
+	.leaderboardCardAvatar {
+		width: 6rem;
+		height: 6rem;
+		margin: 0 auto;
+	}
+
+	.leaderboardCard .userDetails .userCardTitle {
+		text-align: center;
+	}
+
+	.scoreCardTitle {
+		text-align: center;
+		margin-top: 0.5rem;
+	}
+
+	.scoreCircle {
+		width: 40%;
+	}
 }
