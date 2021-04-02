@@ -113,7 +113,7 @@ export default function Authentication(props) {
 				<Form.Group controlId="formNewUser" className="mx-auto">
 					<input
 						type="text"
-						placeholder="Enter your first and last name"
+						placeholder="Enter your name"
 						className={styles.input}
 						name="Full Name Input"
 						onChange={handleInputChange}

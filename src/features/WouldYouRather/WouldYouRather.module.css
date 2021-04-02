@@ -140,7 +140,7 @@
 	text-align: center;
 }
 
-.responsiveNavItems {
+.navDropdown .responsiveNavItems {
 	display: none;
 }
 
@@ -150,7 +150,7 @@
 	border: 1px solid #ccc;
 	padding: 0;
 	overflow: hidden;
-	margin-top: 1.5rem;
+	margin: 1.5rem auto 0 auto;
 }
 
 .headingBtn {
@@ -291,11 +291,11 @@
 		flex-direction: column;
 	}
 
-	.navItem {
+	.nav .navItem {
 		display: none;
 	}
 
-	.responsiveNavItems {
+	.nav .navDropdown .responsiveNavItems {
 		display: block;
 	}
 
@@ -399,6 +399,7 @@
 
 	.input {
 		width: 85%;
+		margin: 0.5rem auto;
 	}
 
 	/* AUTHENTICATION */
@@ -413,11 +414,11 @@
 		flex-direction: column;
 	}
 
-	.navItem {
+	.nav .navItem {
 		display: none;
 	}
 
-	.responsiveNavItems {
+	.nav .navDropdown .responsiveNavItems {
 		display: block;
 	}
 

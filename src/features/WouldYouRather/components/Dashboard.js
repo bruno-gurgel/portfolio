@@ -1,6 +1,6 @@
 import styles from "../WouldYouRather.module.css";
 import React, { useState } from "react";
-import { Container, Row } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import PreviewCard from "./PreviewCard";
 import { useSelector } from "react-redux";
 import { getQuestions, getSortedQuestionsIDs } from "../redux/modules/questions";
@@ -50,7 +50,7 @@ export default function Dashboard() {
 	};
 
 	return (
-		<Container fluid="md" className={styles.dashboardContainer}>
+		<div className={styles.dashboardContainer}>
 			<Row>
 				<button
 					className={viewAnsweredQuestions ? styles.headingBtn : styles.headingBtnActive}
@@ -82,6 +82,6 @@ export default function Dashboard() {
 					www.flaticon.com
 				</a>
 			</div>
-		</Container>
+		</div>
 	);
 }
