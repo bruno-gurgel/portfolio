@@ -60,6 +60,10 @@
 /********** RESPONSIVE **********/
 
 @media screen and (max-width: 599px) {
+	.contactContainer {
+		overflow-y: auto;
+	}
+
 	.contactMailItem:hover p {
 		display: inline-block;
 	}
