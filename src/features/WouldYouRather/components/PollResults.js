@@ -9,7 +9,7 @@ export default function PoolResults(props) {
 	const optionTwoPercentage = (100 / (totalVotes / props.optionTwoVotes)).toFixed(0);
 
 	return (
-		<div className={styles.pollCard}>
+		<div className={`${styles.pollCard} ${styles.pollResultCard}`}>
 			<h5 className={styles.userCardTitle}> Asked by {props.authorName}</h5>
 			<div className={styles.PollResultDetails}>
 				<div

@@ -487,9 +487,19 @@
 		width: 85%;
 	}
 
+	.pollResultCard {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.PollResultDetails {
+		flex-direction: column;
+	}
+
 	.pollCard div .avatarPreview {
 		width: 6rem;
 		height: 6em;
+		margin: 0 auto;
 	}
 
 	.userDetails .pollVoteForm .greenBtn {
