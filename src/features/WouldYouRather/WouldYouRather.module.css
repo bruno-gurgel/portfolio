@@ -272,6 +272,14 @@
 	right: 0px;
 }
 
+/* PageNotFound */
+
+.btnLink:link,
+.btnLink:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
 /********** RESPONSIVE **********/
 
 /***** Tablet ****/
@@ -282,8 +290,6 @@
 	.input {
 		width: 60%;
 	}
-
-	/* AUTHENTICATION */
 
 	/* NAVIGATION */
 
@@ -446,6 +452,10 @@
 	.headingBtnActive {
 		font-size: 1rem;
 		padding: 0.6rem;
+	}
+
+	.blockBtn {
+		display: block;
 	}
 
 	.userCardTitle {

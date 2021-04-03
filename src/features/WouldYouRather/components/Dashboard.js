@@ -57,7 +57,7 @@ export default function Dashboard() {
 					active={!viewAnsweredQuestions}
 					onClick={() => updateViewAnsweredQuestions(false)}
 				>
-					Unanswered Questions
+					<span className={styles.blockBtn}>Unanswered</span> Questions
 				</button>
 
 				<button
@@ -66,7 +66,7 @@ export default function Dashboard() {
 					active={viewAnsweredQuestions}
 					onClick={() => updateViewAnsweredQuestions(true)}
 				>
-					Answered Questions
+					<span className={styles.blockBtn}>Answered</span> Questions
 				</button>
 			</Row>
 			{viewAnsweredQuestions
