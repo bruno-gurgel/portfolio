@@ -12,7 +12,7 @@
 	border: 1px solid #ffc107;
 	border-radius: 7%;
 
-	transition: all 0.2s;
+	transition: all 0.3s;
 }
 
 .btn:hover {
@@ -61,7 +61,7 @@
 	font-weight: 300;
 	line-height: 1.2;
 
-	animation: moveInLeft 1s ease-out;
+	animation: moveInLeft 1.5s ease-out;
 }
 
 .btnContainer {
@@ -71,7 +71,7 @@
 	justify-content: center;
 	gap: 2rem;
 
-	animation: moveInBottom 0.5 ease-out 0.75s;
+	animation: moveInBottom 1 ease-out 0.75s;
 }
 
 @keyframes moveInRight {
