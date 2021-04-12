@@ -35,7 +35,7 @@
 	padding: 0 0.6rem 1.25rem;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 37.5em) {
 	.bookshelf {
 		padding: 0 1.25rem 2.5rem;
 	}

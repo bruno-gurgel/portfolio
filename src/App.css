@@ -34,7 +34,7 @@ body,
 
 /********** RESPONSIVE **********/
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 37.49em) {
 	.App {
 		overflow: visible;
 	}

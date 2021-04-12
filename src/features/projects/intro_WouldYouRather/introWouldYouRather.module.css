@@ -94,7 +94,7 @@
 
 /***** Tablet ****/
 
-@media screen and (min-width: 600px) and (max-width: 900px) {
+@media screen and (min-width: 37.5em) and (max-width: 56.25em) {
 	.wouldYouRatherContainer {
 		overflow-y: auto;
 	}
@@ -109,7 +109,7 @@
 }
 
 /***** Mobile ****/
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 37.49em) {
 	.wouldYouRatherContainer {
 		overflow-y: auto;
 	}
