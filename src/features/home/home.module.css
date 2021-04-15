@@ -148,6 +148,23 @@
 
 /***** Tablet Landscape ****/
 
+@media screen and (min-width: 56.26em) and (max-width: 75em) {
+	.heading {
+		font-size: 4rem;
+		text-align: center;
+	}
+
+	.btnContainer {
+		gap: 0;
+	}
+
+	.btn:not(:last-child),
+	.btn:link:not(:last-child),
+	.btn:active {
+		margin-right: 1.5rem;
+	}
+}
+
 /***** Mobile ****/
 @media screen and (max-width: 37.49em) {
 	.navBtnBox {
