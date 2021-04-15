@@ -120,7 +120,7 @@
 
 /********** RESPONSIVE **********/
 
-/***** Tablet ****/
+/***** Tablet Portrait ****/
 
 @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
 	.navBtnBox {
@@ -138,7 +138,15 @@
 		align-items: center;
 		gap: 0;
 	}
+
+	.btn,
+	.btn:link,
+	.btn:active {
+		margin-bottom: 1.5rem;
+	}
 }
+
+/***** Tablet Landscape ****/
 
 /***** Mobile ****/
 @media screen and (max-width: 37.49em) {
@@ -164,10 +172,10 @@
 		align-items: center;
 		gap: 0;
 	}
-}
 
-.btn,
-.btn:link,
-.btn:active {
-	margin-bottom: 1.5rem;
+	.btn,
+	.btn:link,
+	.btn:active {
+		margin-bottom: 1.5rem;
+	}
 }
