@@ -31,7 +31,7 @@
 
 /********** RESPONSIVE **********/
 
-/***** Tablet ****/
+/***** Tablet Portrait****/
 
 @media screen and (min-width: 37.5em) and (max-width: 56.25em) {
 	.AboutContainer {
@@ -46,6 +46,23 @@
 
 	.text {
 		font-size: 1.4rem;
+		margin-bottom: 0.8rem;
+	}
+}
+
+/***** Tablet Landscape ****/
+
+@media screen and (min-width: 56.26em) and (max-width: 75em) {
+	.AboutContainer {
+		gap: 0;
+		overflow-y: auto;
+	}
+
+	.heading {
+		margin: 0.8rem 0;
+	}
+
+	.text {
 		margin-bottom: 0.8rem;
 	}
 }
