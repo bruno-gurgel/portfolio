@@ -15,7 +15,7 @@ export default function App() {
 	const [language, updateLanguage] = useState("english");
 	return (
 		<div className="App">
-			{/* <Suspense fallback={<Loading />}>
+			<Suspense fallback={<Loading />}>
 				<Switch>
 					<Route path="/about">
 						<About language={language} onUpdateLanguage={updateLanguage} />
@@ -47,7 +47,7 @@ export default function App() {
 						<Home language={language} onUpdateLanguage={updateLanguage} />
 					</Route>
 				</Switch>
-			</Suspense> */}
+			</Suspense>
 			<Loading />
 		</div>
 	);
