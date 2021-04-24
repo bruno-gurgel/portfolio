@@ -48,7 +48,6 @@ export default function App() {
 					</Route>
 				</Switch>
 			</Suspense>
-			<Loading />
 		</div>
 	);
 }
