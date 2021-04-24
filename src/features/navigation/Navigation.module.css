@@ -39,7 +39,7 @@
 
 /***** Tablet ****/
 
-@media screen and (min-width: 37.5em) and (max-width: 56.25em) {
+@media screen and (min-width: 37.5em) and (max-width: 75em) {
 	.navigation {
 		justify-content: center;
 	}
