@@ -14,7 +14,7 @@
 }
 
 .card {
-	height: 50%;
+	height: 60%;
 	width: 45%;
 }
 
@@ -64,14 +64,18 @@
 
 /***** Tablet ****/
 
-@media screen and (min-width: 37.5em) and (max-width: 56.25em) {
+@media screen and (min-width: 37.5em) and (max-width: 75em) {
+	.projectsContainer {
+		overflow-y: auto;
+	}
+
 	.cardBox {
 		flex-direction: column;
 	}
 
 	.card {
-		height: 40%;
-		width: 85%;
+		height: 45%;
+		width: 90%;
 		margin: 0 auto;
 	}
 
