@@ -128,6 +128,12 @@
 		padding: 0;
 	}
 
+	.ola {
+		display: block;
+		text-align: center;
+		font-size: 3.2rem;
+	}
+
 	.heading {
 		font-size: 3.5rem;
 		text-align: center;
@@ -149,6 +155,12 @@
 /***** Tablet Landscape ****/
 
 @media screen and (min-width: 56.26em) and (max-width: 75em) {
+	.ola {
+		display: block;
+		text-align: center;
+		font-size: 3.2rem;
+	}
+
 	.heading {
 		font-size: 4rem;
 		text-align: center;

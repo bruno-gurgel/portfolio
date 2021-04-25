@@ -12,7 +12,9 @@ export default function HomePortuguese({ onUpdateLanguage }) {
 				</button>
 			</Container>
 			<div className={styles.homeMain}>
-				<h1 className={styles.heading}>Olá! Eu sou Bruno, bom te ver aqui.</h1>
+				<h1 className={styles.heading}>
+					<span className={styles.ola}>Olá!</span> Eu sou Bruno, bom te ver aqui.
+				</h1>
 				<br />
 				<div className={styles.btnContainer}>
 					<Link to="/about" className={styles.btn}>
