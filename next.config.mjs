@@ -1,6 +1,5 @@
 import withBundleAnalyzer from "@next/bundle-analyzer"
 import withPlugins from "next-compose-plugins"
-import Nextra from "nextra"
 import { env } from "./env.mjs"
 
 /**

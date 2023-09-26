@@ -1,7 +1,7 @@
 import { Metadata } from "next"
 
-import { Navbar } from "@/components/Navbar"
 import "@/styles/globals.css"
+import NavbarWithProjects from "@/components/NavbarWithProjects"
 import { ThemeProvider } from "@/components/theme-provider"
 
 export const metadata: Metadata = {
@@ -27,7 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className="bg-background">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <Navbar />
+          <NavbarWithProjects />
           <main className="prose flex min-h-screen w-full flex-col items-start p-20 dark:prose-invert lg:prose-xl">
             {children}
           </main>
