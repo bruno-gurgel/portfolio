@@ -1,5 +1,6 @@
 import withBundleAnalyzer from "@next/bundle-analyzer"
 import withPlugins from "next-compose-plugins"
+import Nextra from "nextra"
 import { env } from "./env.mjs"
 
 /**
@@ -7,7 +8,7 @@ import { env } from "./env.mjs"
  */
 const config = withPlugins([[withBundleAnalyzer({ enabled: env.ANALYZE })]], {
   reactStrictMode: true,
-  experimental: { instrumentationHook: true },
+  experimental: { instrumentationHook: true, serverActions: true },
   rewrites() {
     return [
       { source: "/healthz", destination: "/api/health" },
